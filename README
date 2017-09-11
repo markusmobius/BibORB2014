@@ -1,5 +1,13 @@
-Author: Guillaume Gardey (ggardey@club-internet.fr)
+Author: Guillaume Gardey (ggardey@club-internet.fr); modified by Markus Mobius (markusmobius@gmail.com)
 Licence: GPL
+
+BibORB 2014 is a tool to manage and consult BibTeX bibliographies using a web browser.
+
+It is built on the last public release 1.3.3 of BibORB by Guillaume Gardey. 
+The code now runs without errors on PHP 5.3+ and the default login system now uses Google OAuth 2.0. 
+Otherwise, BibORB 2014 is identical to the last official BibORB release.
+
+Please check the PDF file for up-to-date install instructions.
 
 See doc/index.html for a more details documentation of BibORB (installation, configuration, ...)
 
