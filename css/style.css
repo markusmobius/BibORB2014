@@ -1,0 +1,270 @@
+/**
+ *
+ * This file is part of BibORB
+ * 
+ * Copyright (C) 2003-2005  Guillaume Gardey (ggardey@club-internet.fr)
+ * 
+ * BibORB is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU General Public License
+ * as published by the Free Software Foundation; either version 2
+ * of the License, or (at your option) any later version.
+ * 
+ * BibORB is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ * 
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+ * 
+ */
+ 
+/**
+ * 
+ * File: style.css
+ * Author: Guillaume Gardey (ggardey@club-internet.fr)
+ * Year: 2003-2005
+ * Licence: GPL
+ * 
+ * Description:
+ * 
+ *      The artist's playground. :) 
+ * 
+ */
+
+
+@import url(bibtex_table_look.css);
+@import url(bibtex_simple_html_look.css);
+
+/**
+ * Default style for <body>
+ */
+body {font-family:"Gill Sans",Verdana,sans-serif;background-color:white;color:black;font-size:small}
+
+/**
+ * Style for the Menu 
+ */
+#bibname {font-weight:bold;text-align:center;display:block;color:navy;border-top:solid black;border-bottom:solid black;margin-bottom:0.5em;}
+#title {font-weight:bold;text-align:center;display:block;font-size:x-large;text-shadow: #666 2px 2px 2px;letter-spacing:2px;}
+#menu {margin-top:0em;position:relative;float:left;margin-left:10px;text-shadow:#bbb 2px 2px 3px;width:170px;padding:0;}
+#menu ul {margin:0;padding:0;list-style-type:none;width:170px;}
+#menu li {margin:0;}
+#menu ul li a {display: block;color: #333;background-color: transparent;width: 160px;padding: 2px 5px;font-weight: bold;text-decoration:none;border: 1px solid #aaa;font-size:9pt;} 
+#menu ul li a:hover {background-color: #aae;color: #333;padding: 2px 5px;}
+#menu ul ul {margin-left:10px;margin-bottom:10px;padding:0;list-style-type:none;border-bottom:1px dashed #aaa;width:160px;}
+#menu li li a {font-size:9pt;display:block;color: #333;background-color: transparent;width: 150px;padding: 2px 5px;margin:0;border-top: none;border-bottom: none;border-left: 1px dashed #aaa;border-right: 1px dashed #aaa;text-decoration: none;font-weight: normal;}
+#menu li li a:hover{background-color:#ade;color:black;}
+#menu li li a.admin:hover {background-color:#e44;color:black;}
+
+/**
+ * Style for the main panel
+ */
+#main {float:middle;width:70%;margin-left:200px;padding:0 1em 1em 1em;border: solid 1px #aaa;background-color:#eef;}
+#main_title {color:navy;text-align:center;border-bottom:dashed 2px gray;padding-bottom:0.5em;margin-bottom:1em;text-shadow:#666 2px 2px 2px;}
+#error {color:red;border:1px solid red;margin:1em;padding:1em;}
+#message {color:navy;border:1px solid navy;margin:1em;padding:1em;}
+#content {margin:auto;}
+#content p {text-align:justify;}
+#content table.help {margin:auto;border-collapse:collapse;width:450px;}
+#content table.help th {text-align:left;padding:3px;font-style:italic;width:150px;}
+#content table.help th.img {text-align:center;width:50px;}
+#content tr.colored {background-color:#ddd;}
+
+/**
+ * Style for the table recording available databases (index.php)
+ */
+#available_bibliographies {border-collapse:collapse;margin:auto;border:solid 1px #aaa;}
+#available_bibliographies thead {border-bottom:3px solid #444;margin:2px;background-color:#ccc;}
+#available_bibliographies tr:hover {background-color:#ccc;}
+#available_bibliographies td {padding:0.5em;border:dashed 1px #aaa;}
+#available_bibliographies a.download, a:visited.download {color:blue;text-decoration:none;text-align:center;display:block;}
+#available_bibliographies a.bibname, a:visited.bibname {text-decoration:none;color:navy;font-weight:bold;display:block;}
+#available_bibliographies .bib_description {font-style:italic;min-width:150px;display:block;}
+
+/**
+ * Style for the form to choose a database
+ */
+#choose_bib {margin:0;padding:0;}
+#choose_bib fieldset {border:none;text-align:center;margin:0;padding:0;}
+#choose_bib label {margin:0;font-style:italic;display:block;}
+#choose_bib input {width:100px;margin:3px;padding:0;border:solid 1px black;}
+#choose_bib input.submit {margin:3px;padding:0;width:auto;}
+
+/**
+ * Style for the form to choose language
+ */
+#language_form {margin:0;padding:0;font-size:x-small;}
+#language_form fieldset {border:none;text-align:center;margin:0;padding:0;}
+#language_form label {margin:0;font-style:italic;display:block;}
+#language_form input {width:100px;margin:3px;padding:0;border:solid 1px black;}
+#language_form input.submit {margin:3px;padding:0;width:auto;}
+
+/**
+ * Style for login_form
+ */
+#login_form {width:250px;margin:auto;}
+#login_form fieldset {border:solid 1px navy;text-align:center;margin:0;padding:0;}
+#login_form legend {font-weight:bold;color:navy}
+#login_form label {text-align:right;width:100px;float:left;padding-top:0.3em;margin:0;font-weight:bold;font-style:italic;}
+#login_form input {width:100px;margin:3px;padding:0;border:solid 1px black;}
+#login_form input.submit {margin:3px;padding:0;width:auto;}
+
+/**
+ * Style for add database form
+ */
+#f_bib_creation {margin:auto;width:350px;}
+#f_bib_creation fieldset {border:none;text-align:center;margin:0;padding:0;}
+#f_bib_creation label {text-align:right;width:100px;float:left;padding-top:0.3em;margin:0;font-weight:bold;font-style:italic;}
+#f_bib_creation input {width:200px;margin:3px;padding:0;border:solid 1px black;}
+#f_bib_creation input.submit {margin:3px;padding:0;width:auto;}
+
+/**
+ * Style for delete database form
+ */
+#f_delete_database {margin:auto;width:350px;}
+#f_delete_database fieldset {border:none;text-align:center;margin:0;padding:0;}
+#f_bib_creation input.submit {margin:3px;padding:0;width:auto;}
+
+/**
+ * Style for biborb tabs
+ */
+#tabnav {height:20px;margin:0;padding-left:10px;background:url(tab_bottom.gif) repeat-x bottom;}
+#tabnav li {margin:0;padding:0;dsiplay:inline;list-style-type:none;}
+#tabnav a, #tabnav a:visited {float:left;background:#ddd;font-size:10px;line-height:14px;font-weight:bold;padding:2px 10px 2px 10px;margin-right:4px;border:solid 1px navy;text-decoration:none;color:#666;}
+#tabnav a.active, #tabnavavisited.active{border-bottom:solid 1px #ddf;background:#ddf;color:navy;}
+#tabnav a:hover {color:navy;}
+
+/**
+ * Style for search container
+ */
+.search_content {margin:auto;border:solid 1px navy;border-top:none;padding:1em;background-color:#ddf;}
+
+/**
+ * Style for simple search
+ */
+#simple_search_form fieldset {border:none;padding:1em 0 0 0;text-align:center;margin:auto;}
+#simple_search_form table {width:300px;padding:0;margin:auto;text-align:left;}
+
+/**
+ * Style for the advanced search form
+ */
+#search_form fieldset {border:none;margin:0;padding:0;text-align:center;}
+#search_form strong {text-align:left;float:left;}
+#search_form label {text-align:right;width:80px;float:left;margin:3px;}
+#search_form input {width:80%;margin-left:1em;border:1px solid #999;margin:3px;}
+#search_form input.submit {margin-left:1em;border:1px solid #999;width:auto;}
+
+/**
+ * Style for the form containing group to display
+ */ 
+#
+#display_by_group_form {padding:0;margin:0;}
+#display_by_group_form fieldset {border:none;margin:0;padding:0;text-align:center;}
+#display_by_group_form label {font-weight:bold;}
+#display_by_group_form input {border:1px solid black;}
+#display_by_group_form input.submit {border:1px solid black;}
+#group_orphan_form {padding:0;margin:0;}
+#group_orphan_form fieldset {border:none;margin:0;padding:0;text-align:center;}
+#group_orphan_form label {font-weight:bold;}
+#group_orphan_form input.submit {border:1px solid black;}
+
+/**
+ * Style for group management
+ */
+#reset_groups {padding:0;margin:0;border:none;}
+#reset_groups fieldset {border:none;padding:0;margin:0;}
+#add_new_group {padding:0;margin:auto;width:400px;}
+#add_new_group fieldset {border:none;padding:0;margin:0;}
+#add_new_group label {float:left;min-width:100px;}
+#add_new_group .longtextfield {width:170px;}
+#add_group {padding:0;margin:auto;width:400px;}
+#add_group fieldset {border:none;padding:0;margin:0;}
+#add_group label {float:left;min-width:100px;}
+#add_group .longtextfield {width:170px;}
+
+/**
+ * Style for the form to select an entry type
+ */
+#select_entry_type {margin:auto;padding:0;text-align:center;}
+#select_entry_type fieldset {margin:0;padding:0;border:none;}
+#select_entry_type label {font-style:italic; font-weight:bold;}
+
+/**
+ * Style for the form to edit entry
+ */
+#f_bibtex_entry {margin:0;padding:0;border:solid 1px navy;padding-bottom:1em;padding-top:1em;border-top:none;background-color:#ddf;}
+#f_bibtex_entry fieldset.clean {margin:0;padding:0;border:none;text-align:center;}
+#f_bibtex_entry .required {color:red;font-weight:bold;}
+#f_bibtex_entry fieldset.required {border:dotted 1px red;}
+#f_bibtex_entry .required label {color:red;font-weight:bold;font-size:11px;width:90px;float:left;margin-top:0.3em;height:11px;}
+#f_bibtex_entry .required input {width:80%;margin:0.1em;}
+#f_bibtex_entry .optional {color:navy;font-weight:bold;}
+#f_bibtex_entry fieldset.optional {border:dotted 1px navy;display:none;}
+#f_bibtex_entry .optional label {color:navy;font-weight:bold;font-size:11px;width:90px;float:left;margin-top:0.3em;height:11px;}
+#f_bibtex_entry .optional input {width:80%;margin:0.1em;}
+#f_bibtex_entry .additional {color:green;font-weight:bold;}
+#f_bibtex_entry fieldset.additional {border:dotted 1px green;display:none;}
+#f_bibtex_entry .additional label {color:green;font-weight:bold;font-size:11px;width:90px;float:left;margin-top:0.3em;height:11px;}
+#f_bibtex_entry .additional input {width:80%;margin:0.1em;}
+#f_bibtex_entry .additional textarea {height:165px;width:80%;margin:0.1em;}
+
+
+/**
+ * Style for the Tools section
+ */
+.tool_name {display:block;border-bottom:black 1px dotted;text-decoration:none;color:navy;font-weight:bold; margin:0;padding:0;}
+.tool_help {text-align:justify;color:#333;}
+.tool_form {margin:1em;padding:0;}
+.tool_form fieldset {border:none;margin:auto;text-align:center;}
+
+/**
+ * Style for the nav bar (pages to display)
+ */
+ #nav_bar {display:block;font-size:small;margin-top:1em;margin-bottom:0;padding-bottom:0;}
+ #nav_bar a.num_page,  #nav_bar a.num_page:visited {color:navy;text-decoration:none;padding-left:0.2em;}
+ #nav_bar a#current_page {color:navy;text-decoration:none;padding-left:0.2em;font-weight:bold;text-decoration:underline;}
+ 
+/**
+    Preferences form
+ */
+#preferences form {margin:auto;text-align:center;}
+#preferences fieldset {border:solid 1px navy;}
+#preferences legend {font-weight:bold;color:navy;}
+
+/**
+    Error report
+ */
+ .error_report { margin:auto; width:400px;padding:1em;margin-top:4em;border:solid 2px red;}
+ .error_content {margin:1em;border-top:solid 1px red;border-bottom:solid 1px red;color:#444;font-family:monospace}
+ 
+/**
+    Browse
+ */
+.browse_history {font-size:x-small;color:black;margin:1em;font-weight:bold;color:#555;}
+.browse {margin:0;padding:0}
+.browse_items {padding:1em 1em 1em 3em;border:solid 1px navy;border-top:none;background-color:#ddf;}
+.browse_items ul:not(:target) {display:none;margin:0;padding:0;}
+.browse_items ul:target {display:block;margin:0;padding:0;font-weight:bold;}
+.browse_items ul li {font-weight:normal;margin-left:2em;}
+ 
+/**
+    Generic style
+ */
+.result_header {margin:0;border:none;padding:0;vertical-align:center;}
+.add_all {margin:0;border:none;padding:0;vertical-align:center;}
+.f_default_form {}
+.f_default_form fieldset {margin:0;padding:0;border:none;}
+.f_default_form label {font-weight:bold;font-style:italic;min-width:100px;float:left;margin:3px;}
+.f_default_form input {width:150px;border:solid 1px #999;}
+.f_default_form select {width:150px;border:solid 1px #999;}
+.f_default_form input.submit {border:solid 1px #999;width:auto;}
+.submit {border:1px solid #999;}
+.biborb {color:navy;}
+.emphit {font-weight:bold;font-style:italic;}
+a.cleanref, a:hover.cleanref, a:visited.cleanref {color:navy;text-decoration:none;}
+a.admin, a.admin:visited, a.admin:hover {color:red;text-decoration:none;}
+.fieldset-bordered {border: dotted 1px navy;text-align:center;margin:0;padding:1em;}
+input {border:solid 1px #999;font-size:inherit;}
+select {font-size:inherit;}
+textarea {border:solid 1px #999;font-size:inherit;}

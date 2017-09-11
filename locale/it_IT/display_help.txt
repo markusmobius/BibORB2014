@@ -1,0 +1,93 @@
+<p>
+Questo menu d&agrave; accesso agli elementi della bibliografia.
+</p>
+
+<table class='help'>
+  <tbody>
+    <tr class='colored'>
+      <th>Tutti</th>
+      <td>Mostra tutti gli elementi della bibliografia corrente.</td>
+    </tr>
+    <tr>
+       <th>Gruppi</th>
+       <td>Mostra gli elementi per gruppo.</td>
+    </tr>
+    <tr class='colored'>
+      <th>Cerca</th>
+      <td>Cerca elementi nella bibliografia (semplice, dettagliato, XPath).</td>
+    </tr>
+  </tbody>
+</table>
+<p>
+Dai un'occhiata al file <code>config.php</code> per selezionare l'ordinamento predefinito (ID, anno, titolo).
+</p>
+
+<p>
+Diverse azioni possono essere disponibili per ogni elemento visualizzato:
+</p>
+
+<table class='help'>
+  <tbody>
+    <tr class='colored'>
+       <th class='img'><img src="data/images/stock_book-16.png" alt="ps"/></th>
+       <td>Scarica una versione postscript dell'elemento.</td>
+   </tr>
+   <tr>
+       <th  class='img'><img src="data/images/tar.png" alt="ps.gz"/></th>
+       <td>Scarica una versione postscript compressa dell'elemento.</td>
+    </tr>
+    <tr class='colored'>
+        <th class='img'><img src="data/images/pdf-document.png" alt="pdf"/></th>
+        <td>Scarica una versione PDF dell'elemento.</td>
+    </tr>
+    <tr>
+        <th class='img'><img src="data/images/stock_about-16.png" alt="abstract"/></th>
+        <td>Mostra l'abstract.</td>
+    </tr>
+    <tr class='colored'>
+        <th class='img'><img src="data/images/stock_convert-16.png" alt="BibTeX"/></th>
+        <td>Mostra il codice BibTeX.</td>
+    </tr>
+    <tr>
+        <th class='img'><img src="data/images/link-url-16.png" alt="webpage"/></th>
+        <td>Vai ad una pagina web correlata.</td>
+    </tr>
+    <tr class='colored'>
+        <th class='img'><img src="data/images/stock_jump-to-16.png" alt="Link locale"/></th>
+        <td>Vai ad una pagina locale sul server.</td>
+    </tr>
+    <tr>
+        <th class='img'><img src="data/images/stock_edit-16.png" alt="modifica"/></th>
+        <td>Modifica l'elemento per aggiornare le informazioni.</td>
+    </tr>
+    <tr class='colored'>
+        <th class='img'><img src="data/images/stock_delete-16.png" alt="cancella"/></th>
+        <td>Cancella l'elemento.</td>
+    </tr>
+    <tr>
+        <th class='img'><img src="data/images/cvs-add-16.png" alt="aggiungi"/></th>
+        <td>Aggiungi un elemento al carrello.</td>
+    </tr>
+    <tr class='colored'>
+        <th class='img'><img src="data/images/cvs-remove-16.png" alt="rimuovi"/></th>
+        <td>Rimuovi l'elemento dal carrello.</td>
+    </tr>
+    <tr>
+        <th class='img'><img src="data/images/add.png" alt="aggiungi tutto"/></th>
+        <td>Aggiungi tutti gli elementi al carrello.</td>
+    </tr>
+    <tr class='colored'>
+        <th class='img'><img src="data/images/dialog_info.png" alt="remarks"></th>
+        <td>Mostra i dati nel campo BibTeX <code>longnotes</code>.</td>
+    </tr>
+    <tr>
+        <th class='img'><img src="data/images/stock_readnext.png" alt="readnext"/><img src="data/images/stock_read.png" alt="read"/><img src="data/images/stock_notread.png" alt="not read"/></th>
+        <td>Stato di lettura dell'elemento.</td>
+    </tr>
+    <tr class='colored'>
+        <th class='img'><img src="data/images/stock_notown.png" alt="Not Own"/><img src="data/images/stock_borrow.png" alt="Borrowed"/><img src="data/images/stock_buy.png" alt="To Buy"/><img src="data/images/stock_own.png" alt="Own"/></th>
+        <td>Stato di possesso dell'elemento.</td>
+    </tr>
+    </tbody>
+</table>
+    

@@ -1,0 +1,19 @@
+
+<form style='display:inline;' action='bibindex.php' method='get'>
+<fieldset style='border:none;'>
+<input type='submit' name='action' value='Reset'/> Setze für jeden Eintrag im Warenkorb die Gruppeneinträge zurück. 
+</fieldset>
+</form>
+<br/>
+<form style='display:inline;' action='bibindex.php' method='get'>
+<fieldset style='border:none;'>
+Füge alle Einträge im Warenkorb folgender Gruppe hinzu:
+<input name='groupvalue' size='20'/>
+<input type='submit' name='action' value='addgroup'/>
+</fieldset>
+</form>
+<hr/>
+<span style="font-family:serif"><acronym class='biborb'>BibORB</acronym> $biborb_version release,
+$date_release<br/> Veröffentlicht unter der GPL Lizenz.<br/> Updates und
+Informationen sind verfügbar auf der <a href="http://www.nongnu.org/biborb"><acronym class='biborb'>BibORB</acronym>
+Webseite</a> </span>

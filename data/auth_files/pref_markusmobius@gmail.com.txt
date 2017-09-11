@@ -1,0 +1,12 @@
+css_file:style.css
+default_language:en_US
+default_database:
+display_images:yes
+display_txt:no
+display_abstract:no
+warn_before_deleting:yes
+display_sort:yes
+default_sort:ID
+default_sort_order:ascending
+max_ref_by_page:10
+display_shelf_actions:no

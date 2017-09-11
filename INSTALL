@@ -1,0 +1,80 @@
+#####
+
+
+This is a text copy of the documentation provided in the directory
+doc/ that comes with the BibORB distribution.
+
+--------
+
+
+Requirements
+------------
+
+BibORB is based on PHP, XML, XSL and use web pages formated using XHTML/CSS 
+standards. Consequently, you should ensure that:
+
+    * PHP (>=4.0.3) is installed on your webserver.
+    * PHP XSLT functions are available.
+    * PHP Pear functions are available.
+
+Authentication is done using databases (MySQL) or text files.
+
+PHP XSLT
+--------
+
+It appears that XSLT support is not always enabled in some PHP distributions. 
+You will have to check that PHP is compiled with the option --with-sablot or
+--with-xslt-sablot. http://www.php.net/xslt is a good starting point to get 
+information on the install process.
+
+Once XSLT support is enabled, you'll have to activate XSLT module in the 
+configuration of PHP (php.ini):
+
+    * on *nix add (or uncomment) the line:
+        extension=xslt.so
+
+    * on Windows add (or uncomment) the line:  
+        extension=php_xslt.so
+
+PHP Pear
+--------
+
+PHP Pear package may be available on your OS distribution. Otherwise 
+http://pear.php.net provides instructions to install it on your system.
+
+Upgrade from BibORB 1.3.2
+--------------------------
+
+   1. Rename your old BibORB directory
+        mv biborb biborb.old
+
+   2. Untar the archive: tar -xvzf biborb-x.tar.gz
+   3. Copy or move the biborb.old/bibs directory to the new biborb directory.
+   4. If you were using files authentication, copy bib_access.txt and
+      bib_users.txt (located in the directory php/auth_backends) to data/auth_files. 
+
+Install
+-------
+
+   1. Untar the archive: tar -xvzf biborb-x.tar.gz to your webserver's document
+    root (/var/www for instance) or your personal web directory ( ~/public_html for instance)
+   2. Make the bibs directory writable by the webserver. You can:
+          * change its group to the webserver's group and give this group write 
+          access to bibs:
+                
+                chgrp www-data bibs
+                chmod g+w bibs
+
+          * allow anyone to have a write access (not recommended for security reasons):
+
+                chmod a+w bibs
+
+   3. By default, authentication is not activated. Edit the config.php file and 
+   customize BibORB to feet your needs. (See Configuration Help)
+
+Check Installation
+------------------
+
+A script is provided to ensure that everything is ok for BibORB. To run it, 
+open your web browser and go to the following url: 
+        http://yourserver/path/to/biborb/check_biborb.php.

@@ -1,0 +1,24 @@
+<p>
+Ce menu donne accès aux fonctions du panier. Vous pouvez sélectionner des références et appliquer une fonction sur ces réferences.
+</p>
+
+<table class="help">
+	<tbody>
+		<tr class='colored'>
+			<th>Afficher Tout</th>
+			<td>Afficher toutes les références du panier.</td>
+		</tr>
+		<tr>
+			<th>Modifier les groupes</th>
+			<td>Classer les références en utilisant des "groupes".</td>
+		</tr>
+		<tr class='colored'>
+			<th>Exporter...</th>
+			<td>Exporter la sélection au format <acronym>BibTeX</acronym>,<acronym>RIS</acronym> ou <acronym>DocBook</acronym>.</td>
+		</tr>
+        <tr>
+			<th>Vider</th>
+			<td>Vider le panier.</td>
+		</tr>
+	</tbody>
+</table>

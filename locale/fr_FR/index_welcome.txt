@@ -1,0 +1,34 @@
+<acronym class='biborb'>BibORB 2014</acronym> est un outil pour
+gérer et consulter des bibliographies via un navigateur web.
+
+
+<p><acronym class='biborb'>BibORB 2014</acronym> permet de
+partager des bibliographies sur un réseau local (ou internet)
+et de mettre en place un dépot de documents (fichier ps, pdf
+...). Des fonctions d'ajout, de modification, de classement et
+de recherche sont également disponibles pour faciliter la
+gestion et la mise à jour des bibliographies. </p>
+
+Aperçu des fonctionnalités de <span class='biborb'>BibORB</span> :
+<ul>
+    <li> Importer des bibliographies <acronym>BibTeX</acronym>.</li>
+    <li> Créer / supprimer des bibliographies.</li>
+    <li> Exporter les bibliographies au format
+    <acronym>BibTeX</acronym>, <acronym>RIS</acronym>, <acronym>DocBook</acronym.</li>
+    <li> Naviguer dans différentes bibliographies.</li>
+    <li> Ajouter / modifier / supprimer des références.</li>
+    <li> Ajouter les versions électroniques des articles (.ps, .ps. gz, .pdf).</li>
+    <li> Ajouter des liens vers des pages web (internet ou sur le serveur).</li>
+    <li> Rechercher des articles suivant différents critères (recherche simple, détaillée, XPath).</li>
+    <li> Classer les articles par groupe.</li>
+    <li> Sélectionner des articles (panier).</li>
+    <li> Générer le fichier <acronym>BibTeX</acronym> associer au
+    fichier <acronym>LaTeX</acronym> <code>.aux</code>. </li>
+</ul>
+
+<hr/> <span style="font-family:serif"><acronym
+class='biborb'>BibORB 2014</acronym> $biborb_version release,
+$date_release<br/> Distribué sous license GPL.<br/> Mises à
+jour et informations disponibles sur la page <a
+href="https://biborb2014.codeplex.com/" target="blank"><acronym
+class='biborb'>BibORB 2014</acronym></a></span>

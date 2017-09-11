@@ -1,0 +1,18 @@
+<p>
+Il manager permette di creare o cancellare bibliografie.
+</p>
+
+<table class='help'>
+       <tbody>
+		<tr class='colored'>
+			<th>Aggiungi una bibliografia</th>
+			<td>I file necessari a salvare la bibliografia saranno creati. Una bibliografia BibTeX esistente potr&agrave; poi essere importata usando il menu 'importa'.</td>
+		</tr>
+		<tr>
+			<th>Elimina una bibliografia</th>
+			<td style='text-align:justify'>La bibliografia selezionata sar&agrave; spostata in <code>bibs/.trash</code>. La bibliografia sar&agrave; rimossa dalla lista delle bibliografie disponibili. Per rimuoverla definitivamente, <code>bibs/.trash</code> deve essere svuotata manualmente.
+</td>
+		</tr>
+	</tbody>
+</table>
+

@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11-strict.dtd">
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name='robots' content='noindex,nofollow'/>
+    <meta http-equiv="content-type" content="text/html; charset=iso-8859-1"/>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <title>Installing BibORB</title>
+</head>
+
+<body>
+
+<div id="main_container">
+<div id="main">
+<h1>Installing BibORB</h1>      
+    <p>Installing <acronym class='biborb'>BibORB</acronym> 1.3.3.</p>
+
+<div id="index">
+    <h3>Index</h3>
+    <ul>
+        <li><a href="#help_requirements">Requirements</a></li>
+        <li><a href="#help_xslt">PHP XSLT</a></li>
+        <li><a href="#help_pear">PHP Pear</a></li>
+        <li><a href="#help_upgrade">Upgrade from BibORB 1.3.2</a></li>
+        <li><a href="#help_install">Installation</a></li>
+        <li><a href="#check">Check Installation</a></li>
+    </ul>
+</div>
+
+<div id="content">
+
+<div class="topic" id="help_requirements">
+    <h3>Requirements</h3>
+    <div class="topic_content">
+    BibORB is based on PHP, XML, XSL and use web pages formated using XHTML/CSS
+standards. Consequently, you should ensure that:
+        <ul>
+            <li>PHP (>=4.0.3) is installed on your webserver.</li>
+            <li>PHP XSLT functions are available.</li>
+            <li>PHP Pear functions are available.</li>
+        </ul>
+        Authentication is done using databases (MySQL) or text files.
+    </div>
+</div>
+
+<div class="topic" id="help_xslt">
+    <h3>PHP XSLT</h3>
+    <div class="topic_content">
+      <p>Use the script "<a href="#check">check your installation</a>" to detect if XSLT is activated.</p>
+
+      
+    <p>It appears that XSLT support is not always enabled in some PHP distributions. You will have to check that PHP is compiled with the option <code>--with-sablot</code> or <code>--with-xslt-sablot</code>. <a href='http://www.php.net/xslt'>http://www.php.net/xslt</a> is a good starting point to get information on the install process.</p>
+    <p>Once XSLT support is enabled, you'll have to activate XSLT module in the configuration of PHP (<code class='file'>php.ini</code>):</p>
+        <ul>
+            <li>on *nix add (or uncomment) the line:<pre>extension=xslt.so</pre></li>
+            <li>on Windows add (or uncomment) the line:<pre>extension=php_xslt.so</pre></li>
+        </ul>
+    </div>
+</div>
+
+<div class="topic" id="help_pear">
+    <h3>PHP Pear</h3>
+    <div class="topic_content">
+      <p>Use the script "<a href="#check">check your installation</a>" to detect if PEAR is activated.</p>
+    <p>PHP Pear package may be available on your OS distribution. Otherwise
+<a href='http://pear.php.net'>http://pear.php.net</a> provides instructions to install it on your system.</p>
+    </div>
+</div>
+
+
+<div class="topic" id="help_upgrade">
+    <h3>Upgrade from BibORB 1.3.2</h3>
+    <div class="topic_content">
+    <ol>
+        <li>Rename your old BibORB directory
+        <pre>mv biborb biborb.old</pre></li>
+        <li>Untar the archive: <code>tar -xvzf biborb-x.tar.gz</code></li>
+        <li>Copy the <code class='file'>biborb.old/bibs</code> directory to the new biborb directory.</li>
+        <li>If you were using files authentication,
+        copy <code class='file'>bib_access.txt</code>
+        and <code class='file'>bib_users.txt</code> (located in the
+        directory <code class='file'>php/auth_backends</code>)
+        to <code class='file'>data/auth_files</code>. Ensure that
+        the <code class='file'>data/auth_files</code> is writtable by
+        the webserver.</li>
+	<li>If you were using MySQL authentication, a new table must be added to your database to handle user preferences. See <code class='file'>data/biborb.sql</code>.</li>
+    </ol>
+    </div>
+</div>
+
+
+<div class="topic" id="help_install">
+    <h3>Install</h3>
+    <div class="topic_content">
+    
+    <ol>
+        <li>Untar the archive: <code>tar -xvzf biborb-x.tar.gz</code> to your webserver's document root (<code class='file'>/var/www</code> for instance) or your personal web directory ( <code class='file'>~/public_html</code> for instance)</li>
+        <li>Make the <code class='file'>bibs</code> directory writable by the webserver. You can:
+            <ul>
+                <li>change its group to the webserver's group and give this group write access to <code class='file'>bibs</code>:
+<pre>chgrp www-data bibs
+chmod g+w bibs</pre>
+                </li>
+                <li>allow anyone to have a write access (not recommended for security
+        reasons):<pre>chmod a+w bibs</pre>
+                </li>
+            </ul>
+        </li>
+        
+        <li>By default, authentication is not activated. Edit the <code class='file'>config.php</code> file and customize BibORB to feet your needs. (See <a href='./doc_config.html'>Configuration Help</a>)</li>
+        
+    </ol>
+    </div>
+</div>
+
+<div class="topic" id="check">
+    <h3>Check Installation</h3>
+    <div class="topic_content">
+        A script is provided to ensure that everything is ok for BibORB. To run it, open your web browser and go to the following url: <code>http://yourserver/path/to/biborb/check_biborb.php</code>.
+    </div>
+</div>
+
+</div>
+</div>
+</div>
+</body>
+</html>

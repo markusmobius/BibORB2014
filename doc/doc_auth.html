@@ -1,0 +1,155 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11-strict.dtd">
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta name='robots' content='noindex,nofollow'/>
+    <meta http-equiv="content-type" content="text/html; charset=iso-8859-1"/>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <title>Authentication and BibORB</title>
+  </head>
+  
+  <body>
+    
+    <div id="main_container">
+      <div id="main">
+	<h1>Authentication and BibORB</h1>      
+	<p>Configure the authentication support in <acronym class='biborb'>BibORB</acronym> 1.3.3.</p>
+	
+	<div id="index">
+	  <h3>Index</h3>
+	  <ul>
+            <li><a href="#help_intro">Introduction</a></li>
+            <li><a href="#help_htaccess">.htaccess</a></li>
+            <li><a href="#help_mysql">MySQL</a></li>
+            <li><a href="#help_file">File</a></li>
+	  </ul>
+	</div>
+	
+	<div id="content">
+	  
+	  <div class="topic" id="help_intro">
+	    <h3>Introduction</h3>
+	    <div class="topic_content">
+	      <p>If BibORB is used in a collaborative way, you may want to define who can add, modify or delete references. Presently, two authentication methods are supported: MySQL and files.</p>
+	    </div>
+	  </div>
+	  
+	  <div class="topic" id="help_htaccess">
+	    <h3>Access restriction using <code>.htaccess</code></h3>
+	    <div class="topic_content">
+	      <p>This method allows to restrict the access to BibORB pages. A user will have to enter a valid pair (username,password) to access BibORB. Then, the rules (add, edit, delete) are defined by one of the authentication methods supported by BibORB ie., presently, MySQL an Files (see following sections).</p>
+	   
+	      <p>The first step is to create a file containing a list of trusted users storing their username and password. This can be achieved using the program <code>htpasswd</code>. The following command creates a file named <code class='file'>.htpasswd_biborb</code> initially filled with a password for the user <strong>foo</strong>.</p>
+<pre>htpasswd -c .htpasswd_biborb foo
+New password: ******
+Re-type new password: ******</pre>
+<p>To add a new user to the password file:</p>
+<pre>htpasswd .htpasswd_biborb anotherFoo
+New password: ******
+Re-type new password: ******</pre>
+<p>Then, uncomment the following lines in <code class='file'>.htaccess</code>:</p>
+	      <pre>AuthName BibORB Restricted Area
+AuthType Basic
+AuthUserFile /path/to/.htpasswd_biborb
+require valid-user</pre>
+	      <p>To secure the password files, uncomment also the lines:</p>
+<pre>&lt;Files .ht*&gt;
+deny from all
+&lt;/Files&gt;</pre>
+	    </div>
+	  </div>
+	  
+	  <div class="topic" id="help_mysql">
+	    <h3>MySQL authentication</h3>
+	    <div class="topic_content">
+	      <p>Values to defined in <code class='file'>config.php</code>:</p>
+	      <pre>
+/**
+ * If TRUE, this will disable authentification.
+ * All users will have the administrator status
+ */
+define("DISABLE_AUTHENTICATION",TRUE);
+	
+/**
+ * Authentication methods: mysql, files
+ * Used if DISABLE_AUTHENTICATION = FALSE
+ */
+define("AUTH_METHOD",'mysql');</pre>
+    <p>The next step is to correctly set up <code class='file'>php/auth_backends/auth.mysql.php</code>. This is done by defining:</p>
+<pre>
+/**
+    The database configuration
+*/
+$host = "localhost";
+$db = "biborb";
+$dbuser = "biborb-admin";
+$pass = "biborbdev";
+$table = "biborb_users";
+$auth_table = "biborb_auth";
+$pref_table = "user_preferences"</pre>
+    <ul>
+        <li><code class='variable'>$host</code>: address of the machine hosting the database.</li>
+        <li><code class='variable'>$db</code>: name of the database.</li>
+        <li><code class='variable'>$dbuser</code>: a valid MySQL user which has access to the database.</li>
+        <li><code class='variable'>$pass</code>: its password.</li>
+        <li><code class='variable'>$table</code>: the table containing valid biborb users and passwords.</li>
+        <li><code class='variable'>$auth_table</code>: the table that defined authorizations for biborb users.</li>
+        <li><code class='variable'>$pref_table</code>: the table that defined biborb users preferences.</li>
+    </ul>
+    
+    <p><code class='file'>data/biborb.sql</code> contains the SQL structure used with the MySQL authentication. Have a look to <code class='file'>php/auth_backends/auth.mysql.php</code> for details about the structure of the database.</p>
+    </div>
+</div>
+
+<div class="topic" id="help_file">
+    <h3>Files authentication</h3>
+    <div class="topic_content">
+    <p>If you don't want or don't have access to a database, you can configure authorizations using files.</p>
+    <p>Values to defined in <code class='file'>config.php</code>:</p>
+        <pre>
+/**
+ * If TRUE, this will disable authentification.
+ * All users will have the administrator status
+ */
+define("DISABLE_AUTHENTICATION",TRUE);
+
+/**
+ * Authentication methods: mysql, files
+ * Used if DISABLE_AUTHENTICATION = FALSE
+ */
+define("AUTH_METHOD",'files');</pre>
+    <p>Files used to defines access are <code class='file'>php/auth_backends/bib_access.txt</code> and <code class='file'>data/auth_files/bib_users.txt</code></p>
+    <ul>
+        <li><code class='file'>data/auth_files/bib_users.txt</code>: it contains a list of user/password: <code>user:crypted_password,isAdmin</code> where <code>isAdmin=1</code> if the user is an administrator (all privileges, add/delete bibliographies), 0 otherwise.
+<pre>
+testuser:testpass,0
+admin:admin,1
+</pre>
+        Use <code class='file'>php/auth_backends/crypt_password.php</code> to crypt your password, then copy it in <code class='file'>bib_users.txt</code> .
+        </li>
+        <li><code class='file'>data/auth_files/bib_access.txt</code>: it defines the users' privileges on each database (<code>a</code>: add reference, <code>d</code>: delete reference, <code>m</code>: update reference)
+<pre>
+abibliography:testuser*m,anotheruser*adm
+anotherbiblio:testuser*adm,anotheruser*am
+</pre>
+        </li>
+    </ul>
+    <p>Users preferences are stored in the folder <code class='file'>data/auth_files</code>. Consequently, this folder must be writtable by the webserver. For instance you can change the group of the directory to the one of you webserver and set it writtable by this group.</p>
+<pre>
+chrgp www-data data/auth_files
+chmod g+w data/auth_files
+</pre>
+<p>Finally, to secure the installation, prevent the access to these files by uncomenting the following lines in the .htaccess file:</p>
+<pre>&lt;Files bib_*.txt &gt;
+   Deny from all
+&lt;/Files&gt;
+&lt;Files pref_*.txt&gt;
+   Deny from all
+&lt;/Files&gt;
+</pre>
+    </div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

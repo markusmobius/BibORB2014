@@ -1,0 +1,24 @@
+<p>
+This menu gives access to the basket functions. You can select some entries and perform actions on them:
+</p>
+
+<table class="help">
+	<tbody>
+		<tr class='colored'>
+			<th>Display All</th>
+			<td>Display all entries recorded in the basket.</td>
+		</tr>
+		<tr>
+			<th>Group Modification</th>
+			<td>Classify entries in groups.</td>
+		</tr>
+		<tr class='colored'>
+			<th>Export... </th>
+			<td>Export the selection to BibTeX, RIS or DocBook.</td>
+		</tr>
+        <tr>
+			<th>Reset Basket</th>
+			<td>Delete the basket.</td>
+		</tr>
+	</tbody>
+</table>

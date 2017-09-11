@@ -1,0 +1,41 @@
+<acronym class='biborb'>BibORB 2014</acronym> is a tool to
+manage and consult BibTeX bibliographies using a web browser.
+
+<p>It is built on the last public release 1.1.3 of BibORB by
+Guillaume Gardey. The code now runs without errors on PHP 5.3+
+and the default login system now uses Google+.</p>
+
+<p>The main aims in its design were to allow the sharing of
+bibliographies on a network (intranet, internt) and provide a
+repository for documents associated to recorded references (ps,
+pdf document). It grew from this to permit: creation and
+deletion of bibliographies, then the facilities to edit entries
+were added thus creating a simple web front-end for
+bibliographies management.
+
+</p>
+
+Overview of <span class='biborb'>BibORB</span> features:
+<ul>
+
+        <li> Import <acronym>BibTeX</acronym> bibliographies.</li>
+        <li> Add / Delete bibliographies.</li>
+        <li> Export bibliographies in <acronym>BibTeX</acronym>,<acronym>RIS</acronym>,<acronym>DocBook</acronym> format.</li>
+        <li> Browse different bibliographies.</li>
+        <li> Add / Delete / Modify references.</li>
+        <li> Uploader electronic releases of papers (.ps, .ps. gz, .pdf).</li>
+        <li> Add link to relevant web pages (internet, server).</li>
+        <li> Search in a bibliography (simple, detailed, XPath).</li>
+        <li> Classify references by groups.</li>
+        <li> Select references (shopping basket function).</li>
+        <li> Generate the <acronym>BibTeX</acronym> file associated to
+        the <acronym>LaTeX</acronym> <code>.aux</code> file. </li>
+</ul>
+
+
+<hr/> <span style="font-family:serif"><acronym
+class='biborb'>BibORB 2014</acronym> $biborb_version release,
+$date_release<br/> Released under the GPL licence.<br/> Update
+and information available at <a
+href="https://biborb2014.codeplex.com/" target="blank"><acronym
+class='biborb'>BibORB 2014</acronym> website</a> </span>

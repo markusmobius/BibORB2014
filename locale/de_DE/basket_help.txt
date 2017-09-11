@@ -1,0 +1,28 @@
+<p>
+Dieses Menü gibt Zugriff auf die Warenkorbfunktion. Selektiere einige Einträge und führe folgende Aktionen aus:
+</p>
+
+<table class="help">
+	<tbody>
+		<tr class='colored'>
+			<th>Zeige alles</th>
+			<td>Zeige alle Einträge im Warenkorb.</td>
+		</tr>
+		<tr>
+			<th>Gruppenmodifikation</th>
+			<td>Füge Einträge zu Gruppen hinzu.</td>
+		</tr>
+		<tr class='colored'>
+			<th>Exportiere nach BibTeX</th>
+			<td>Exportiere die Auswahl nach BibTeX.</td>
+		</tr>
+		<tr>
+			<th>Exportiere nach HTML</th>
+			<td>Exportiere die Auswahl nach HTML.</td>
+		</tr>
+        <tr class='colored'>
+			<th>Zurücksetzen des Warenkorbes</th>
+			<td>Lösche den Warenkorb.</td>
+		</tr>
+	</tbody>
+</table>

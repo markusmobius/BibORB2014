@@ -1,0 +1,14 @@
+
+<form style='display:inline;' action='bibindex.php' method='get'>
+<fieldset style='border:none;'>
+<input type='submit' name='action' value='Reset'/> Reset the groups field of each entry in the basket. 
+</fieldset>
+</form>
+<br/>
+<form style='display:inline;' action='bibindex.php' method='get'>
+<fieldset style='border:none;'>
+Add all entries in the basket to a group:
+<input name='groupvalue' size='20'/>
+<input type='submit' name='action' value='addgroup'/>
+</fieldset>
+</form>

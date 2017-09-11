@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11-strict.dtd">
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name='robots' content='noindex,nofollow'/>
+    <meta http-equiv="content-type" content="text/html; charset=iso-8859-1"/>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <title>BibORB &amp; developer notes</title>
+</head>
+
+<body>
+
+<div id="main_container">
+
+<div id="main">
+    <h1>Developer notes</h1>
+    
+    <p>This page presents some developer notes if you want to customize BibORB
+    to your needs.</p>
+    
+<div id="index">
+    <h3>Index</h3>
+    <ul>
+        <li><a href="#help_add_fields">Add new fields</a></li>
+        <li><a href="#help_add_type">Create new types of references</a></li>
+    </ul>
+</div>
+
+<div id="content">
+
+<div class="topic" id="help_add_fields">
+    <h3>Add new fields</h3>
+    <div class="topic_content">
+    It is possible to customize <acronym>BibORB</acronym> by adding new fields. This can be realize in two steps. Let's assume you want to add an ISBN field for the <acronym>BibTeX</acronym> entry "book":
+    <ul>
+        <li>Add <code class='constant'>isbn</code> to the <code class='variable'>$bibtex_entries</code> variable in the <code class='file'>config.php</code> file.
+            <pre>
+    $bibtex_entries = array(
+    "id",
+    ...
+    "link",
+    <span class="emphcode">"isbn" // &lt;-- add the "isbn" value</span>
+);</pre>
+        </li>
+        <li>Add the XML field tag <code class='constant'>&lt;isbn/&gt;</code> to the <code class='constant'>book</code> entry in <code class='file'>xsl/model.xml</code>. For this example, I want it to be an optional field:
+            <pre>
+            ...
+&lt;entry type="book"&gt;
+    &lt;required&gt;
+      &lt;id/&gt;
+      &lt;exalternative&gt;
+        &lt;author/&gt;&lt;editor/&gt;
+      &lt;/exalternative&gt;
+      &lt;title/&gt;&lt;publisher/&gt;&lt;year/&gt;
+      <span class="emphcode">&lt;!-- place here if isbn is a required field -- &gt;</span>
+    &lt;/required&gt;
+    &lt;optional&gt;
+      &lt;exalternative&gt;
+        &lt;volume/>&lt;number/&gt;
+      &lt;/exalternative&gt;
+      &lt;series/&gt;&lt;address/&gt;&lt;edition/&gt;&lt;month/>&lt;note/&gt;
+      <span class="emphcode">&lt;!-- place here if isbn is an optional field -- &gt;
+      &lt;isbn/&gt; </span>
+    &lt;/optional&gt;
+    &lt;additional&gt;
+      &lt;groups/&gt;&lt;abstract/&gt;&lt;keywords/&gt;
+      &lt;url/&gt;&lt;urlzip/&gt;&lt;pdf/&gt;&lt;website/&gt;&lt;link/&gt;&lt;longnotes/&gt;
+      <span class="emphcode">&lt;!-- place here if isbn is an additional field -- &gt;</span>
+    &lt;/additional&gt;
+  &lt;/entry&gt;
+  ...</pre>
+        </li>
+        <li>That's all! Go back to BibORB, add a new book reference: an 'isbn' 
+        field is then present in the optional section.</li>
+    </ul>
+
+    </div>
+</div>
+
+<div class="topic" id="help_add_type">
+    <h3>Create new types of references</h3>
+    <div class="topic_content">
+    <p>BibORB was originally designed to handle BibTeX bibliographies. However, if BibTeX types, fields are not sufficient, or simply don't suit your bibliographic data (musique, video, ....), you can define your own types of references.</p>
+    <p>BibORB uses the <code class='file'>xsl/model.xml</code> to determine which types are available and which fields they contain. By adding the following code to <code class='file'>xsl/model.xml</code> you will create a new type named <code class='constant'>friend</code> containing three required fields (<code class='variable'>fullname</code>, <code class='variable'>birthDate</code>, <code class='variable'>address</code>) and one optional field (<code class='variable'>phoneNumber</code>). The only requirement is to add a tag <code class='constant'>&lt;id/&gt;</code> that uniquely identifies the new bibliographic item.</p>
+    <pre>
+&lt;entry type='friend'&gt;
+    &lt;required&gt;
+        &lt;id/&gt;
+        &lt;fullName/&gt;
+        &lt;birthDate/&gt;
+        &lt;addresss/&gt;
+    &lt;/required&gt;
+    &lt;optional&gt;
+        &lt;phoneNumer/&gt;
+    &lt;/optional&gt;
+&lt;/entry&gt;</pre>
+    
+    </div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

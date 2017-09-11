@@ -1,0 +1,1135 @@
+# French localization file for BibORB
+# Copyright (C) 2004, BibORB, released under the GPL licence.
+# This file is distributed under the same license as the BibORB package.
+# Guillaume Gardey <ggardey@club-internet.fr>, 2004.
+# 
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: BibORB\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2004-11-22 23:14+0100\n"
+"PO-Revision-Date: 2004-11-22 23:14+0100\n"
+"Last-Translator: Guillaume Gardey <ggardey@club-internet.fr>\n"
+"Language-Team: <biborb-i18n@nongnu.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: "
+
+#: bibindex.php:204 bibindex.php:231 bibindex.php:283 bibindex.php:308
+msgid "Yes"
+msgstr "Oui"
+
+#: bibindex.php:215
+#, php-format
+msgid "The following entry was deleted: <pre>%s</pre>"
+msgstr "La référence suivante a été effacée: <pre>%s</pre>"
+
+#: bibindex.php:220 bibindex.php:230 bibindex.php:297 bibindex.php:307
+msgid "No"
+msgstr "Non"
+
+#: bibindex.php:225
+#, php-format
+msgid "Delete this entry? <pre>%s</pre>"
+msgstr "Supprimer cette référence? <pre>%s</pre>"
+
+#: bibindex.php:241 bibindex.php:327 interface.php:1066 interface.php:1074
+#: interface.php:1154
+msgid "Add"
+msgstr "Ajouter"
+
+#: bibindex.php:243
+msgid "No group specified!"
+msgstr "Aucun sélectionné!"
+
+#: bibindex.php:250 interface.php:1057
+msgid "Reset"
+msgstr "Réinitialiser"
+
+#: bibindex.php:258 bibindex.php:419 interface.php:1113 interface.php:1153
+#: interface.php:1216
+msgid "Cancel"
+msgstr "Annuler"
+
+#: bibindex.php:275
+#, php-format
+msgid "BibTeX key <code>%s</code> already exists."
+msgstr "La clé BibTeX <code>%s</code> est déjà utilisée!"
+
+#: bibindex.php:293
+#, php-format
+msgid "The following entries were deleted: <pre>%s</pre>"
+msgstr "Les références suivantes ont été supprimées: <pre>%s</pre>"
+
+#: bibindex.php:302
+msgid "Delete the following entries?"
+msgstr "Supprimer ces références?"
+
+#: bibindex.php:330
+msgid "ENTRY_ADDED_SUCCESS"
+msgstr "La référence suivante a été ajoutée:"
+
+#: bibindex.php:345 interface.php:1217
+msgid "Update"
+msgstr "Mettre à jour"
+
+#: bibindex.php:348
+msgid "The following entry was updated:"
+msgstr "La référence suivante a été mise à jour:"
+
+#: bibindex.php:387
+msgid "The following entry was added to the database:"
+msgstr "La référence suivante a été ajoutée à la bibliographie."
+
+#: bibindex.php:390
+msgid "The following entries were added to the database:"
+msgstr "Les références suivantes ont été ajoutées à la bibliographie:"
+
+#: bibindex.php:400 index.php:132 interface.php:57 interface.php:366
+msgid "Login"
+msgstr "S'Identifier"
+
+#: bibindex.php:404 index.php:136
+msgid "LOGIN_MISSING_VALUES"
+msgstr "Identifiant ou mot de passe absent!"
+
+#: bibindex.php:414 index.php:146
+msgid "LOGIN_WRONG_USERNAME_PASSWORD"
+msgstr "Identifiant ou mot de passe invalide!"
+
+#: bibindex.php:426 interface.php:1315
+msgid "Export"
+msgstr "Exporter"
+
+#: bibindex.php:521 interface.php:1114
+msgid "Select"
+msgstr "Sélectionner"
+
+#: biborbdb.php:607
+msgid "BIB_CREATION_SUCCESS"
+msgstr "La bibliographie a été créée."
+
+#: biborbdb.php:610
+msgid "BIB_CREATION_ERROR"
+msgstr "Erreurs durant la création de la bibliographie."
+
+#: biborbdb.php:629
+msgid "BIB_EXISTS"
+msgstr "Cette bibliographie existe déjà!"
+
+#: biborbdb.php:633
+msgid "BIB_EMPTY_NAME"
+msgstr "Vous devez saisir un nom pour la nouvelle bibliographie!"
+
+#: biborbdb.php:648
+#, php-format
+msgid "Database %s moved to trash."
+msgstr "La bibliographie %s a été déplacée dans la corbeille."
+
+#: biborbdb.php:649
+#, php-format
+msgid "Remove %s to definitively delete it."
+msgstr "Supprimer le répertoire %s pour l'effacer définitivement."
+
+#: functions.php:354
+msgid "Add all entries to the basket."
+msgstr "Ajouter toutes les références au panier."
+
+#: functions.php:374 interface.php:707
+msgid "Sort by:"
+msgstr "Trier par: "
+
+#: functions.php:387 functions.php:390 interface.php:682 interface.php:728
+msgid "Title"
+msgstr "Titre"
+
+#: functions.php:394 functions.php:397 interface.php:704 interface.php:738
+msgid "Year"
+msgstr "Année"
+
+#: functions.php:404
+msgid "Sort"
+msgstr "Trier"
+
+#: index.php:99 interface.php:110
+msgid "Create"
+msgstr "Créer"
+
+#: index.php:107 interface.php:147
+msgid "Delete"
+msgstr "Supprimer"
+
+#: interface.php:45
+msgid "INDEX_MENU_LOGIN_TITLE"
+msgstr "Authentification"
+
+#: interface.php:49 interface.php:357
+msgid "LOGIN_USERNAME"
+msgstr "Identifiant"
+
+#: interface.php:53 interface.php:362
+msgid "LOGIN_PASSWORD"
+msgstr "Mot de passe"
+
+#: interface.php:93
+msgid "INDEX_CREATE_BIB_TITLE"
+msgstr "Créer une nouvelle bibliographie."
+
+#: interface.php:101
+msgid "INDEX_CREATE_BIBNAME"
+msgstr "Nom"
+
+#: interface.php:105
+msgid "INDEX_CREATE_DESCRIPTION"
+msgstr "Description"
+
+#: interface.php:130
+msgid "INDEX_DELETE_BIB_TITLE"
+msgstr "Supprimer une bibliographie"
+
+#: interface.php:165
+msgid "INDEX_MANAGER_HELP_TITLE"
+msgstr "Administration (Aide)"
+
+#: interface.php:182
+msgid "INDEX_RESULTS_TITLE"
+msgstr "Rapport de BibORB"
+
+#: interface.php:197
+msgid "INDEX_AVAILABLE_BIBS_TITLE"
+msgstr "Bibliographies disponibles"
+
+#: interface.php:206
+msgid "INDEX_AVAILABLE_BIBS_COL_BIBNAME"
+msgstr "Nom"
+
+#: interface.php:207
+msgid "INDEX_AVAILABLE_BIBS_COL_BIBDESCRIPTION"
+msgstr "Description"
+
+#: interface.php:208
+msgid "INDEX_AVAILABLE_BIBS_COL_SOURCES"
+msgstr "Sources (BibTeX)"
+
+#: interface.php:220
+msgid "Download"
+msgstr "Télécharger"
+
+#: interface.php:249
+msgid "INDEX_MENU_WELCOME_HELP"
+msgstr "Page d'accueil (Aide)"
+
+#: interface.php:249
+msgid "INDEX_MENU_WELCOME"
+msgstr "Accueil"
+
+#: interface.php:251
+msgid "INDEX_MENU_BIBS_LIST_HELP"
+msgstr "Liste des bibliographies disponibles"
+
+#: interface.php:251
+msgid "INDEX_MENU_BIBS_LIST"
+msgstr "Bibliographies disponibles"
+
+#: interface.php:260
+msgid "INDEX_MENU_MANAGER_HELP"
+msgstr "Administration (Aide)"
+
+#: interface.php:260
+msgid "INDEX_MENU_MANAGER"
+msgstr "Administration"
+
+#: interface.php:263
+msgid "INDEX_MENU_LOGIN_HELP"
+msgstr "S'Identifier..."
+
+#: interface.php:263
+msgid "INDEX_MENU_LOGIN"
+msgstr "S'Identifier"
+
+#: interface.php:266
+msgid "INDEX_MENU_ADD_BIB_HELP"
+msgstr "Créer une nouvelle bibliographie"
+
+#: interface.php:266
+msgid "INDEX_MENU_ADD_BIB"
+msgstr "Ajouter une bibliographie"
+
+#: interface.php:267
+msgid "INDEX_MENU_DELETE_BIB_HELP"
+msgstr "Supprimer une bibliographie"
+
+#: interface.php:267
+msgid "INDEX_MENU_DELETE_BIB"
+msgstr "Supprimer une bibliographie"
+
+#: interface.php:270
+msgid "INDEX_MENU_LOGOUT_HELP"
+msgstr "Déconnexion..."
+
+#: interface.php:270
+msgid "INDEX_MENU_LOGOUT"
+msgstr "Déconnexion"
+
+#: interface.php:353
+msgid "INDEX_LOGIN_TITLE"
+msgstr "Authentification"
+
+#: interface.php:402
+msgid "BIBINDEX_MENU_SELECT_BIB"
+msgstr "Bibliographies"
+
+#: interface.php:408
+msgid "BIBINDEX_MENU_DISPLAY_HELP"
+msgstr "Afficher les références (Aide)"
+
+#: interface.php:408
+msgid "BIBINDEX_MENU_DISPLAY"
+msgstr "Affichage"
+
+#: interface.php:410
+msgid "BIBINDEX_MENU_DISPLAY_ALL_HELP"
+msgstr "Afficher toutes les références"
+
+#: interface.php:410
+msgid "BIBINDEX_MENU_DISPLAY_ALL"
+msgstr "Tout Afficher"
+
+#: interface.php:411
+msgid "BIBINDEX_MENU_DISPLAY_BY_GROUP_HELP"
+msgstr "Afficher les références par groupe"
+
+#: interface.php:411
+msgid "BIBINDEX_MENU_DISPLAY_BY_GROUP"
+msgstr "Par Groupe"
+
+#: interface.php:413
+msgid "BIBINDEX_MENU_DISPLAY_SEARCH_HELP"
+msgstr "Rechercher des références"
+
+#: interface.php:413
+msgid "BIBINDEX_MENU_DISPLAY_SEARCH"
+msgstr "Recherche"
+
+#: interface.php:412
+msgid "BIBINDEX_MENU_DISPLAY_SIMPLE_SEARCH_HELP"
+msgstr "Un moteur de recherche simple"
+
+#: interface.php:412
+msgid "BIBINDEX_MENU_DISPLAY_SIMPLE_SEARCH"
+msgstr "Recherche (Simple)"
+
+#: interface.php:413
+msgid "BIBINDEX_MENU_DISPLAY_ADVANCED_SEARCH_HELP"
+msgstr "Un moteur de recherche plus précis"
+
+#: interface.php:413
+msgid "BIBINDEX_MENU_DISPLAY_ADVANCED_SEARCH"
+msgstr "Recherche (Avancée)"
+
+msgid "BIBINDEX_MENU_TOOLS"
+msgstr "Outils"
+
+#: interface.php:423
+msgid "BIBINDEX_MENU_BASKET_HELP"
+msgstr "Panier (Aide)"
+
+#: interface.php:423
+msgid "BIBINDEX_MENU_BASKET"
+msgstr "Panier"
+
+#: interface.php:425
+msgid "BIBINDEX_MENU_BASKET_DISPLAY_HELP"
+msgstr "Afficher toutes les références présentes dans le panier"
+
+#: interface.php:425
+msgid "BIBINDEX_MENU_BASKET_DISPLAY"
+msgstr "Afficher le panier"
+
+#: interface.php:427
+msgid "BIBINDEX_MENU_BASKET_GROUP_HELP"
+msgstr "Modifier/ajouter des groupes"
+
+#: interface.php:427
+msgid "BIBINDEX_MENU_BASKET_GROUP"
+msgstr "Modifier les Groupes"
+
+#: interface.php:429
+msgid "BIBINDEX_MENU_BASKET_BIBTEX_HELP"
+msgstr "Exporter le panier vers BibTeX"
+
+#: interface.php:429
+msgid "BIBINDEX_MENU_BASKET_BIBTEX"
+msgstr "Exporter vers BibTeX"
+
+#: interface.php:430
+msgid "BIBINDEX_MENU_BASKET_HTML_HELP"
+msgstr "Exporter le panier en HTML"
+
+#: interface.php:430
+msgid "BIBINDEX_MENU_BASKET_HTML"
+msgstr "Exporter vers HTML"
+
+#: interface.php:431
+msgid "BIBINDEX_MENU_BASKET_RESET_HELP"
+msgstr "Vider le panier"
+
+#: interface.php:449
+msgid "BIBINDEX_MENU_BASKET_RESET"
+msgstr "Vider"
+
+#: interface.php:461
+msgid "BIBINDEX_MENU_ADMIN_HELP"
+msgstr "Administration (Aide)"
+
+#: interface.php:461
+msgid "BIBINDEX_MENU_ADMIN"
+msgstr "Administration"
+
+#: interface.php:464
+msgid "BIBINDEX_MENU_ADMIN_LOGIN_HELP"
+msgstr "S'Identifier..."
+
+#: interface.php:464
+msgid "BIBINDEX_MENU_ADMIN_LOGIN"
+msgstr "S'Identifier"
+
+#: interface.php:467
+msgid "BIBINDEX_MENU_ADMIN_ADD_HELP"
+msgstr "Ajouter une nouvelle référence"
+
+#: interface.php:467
+msgid "BIBINDEX_MENU_ADMIN_ADD"
+msgstr "Ajouter une référence"
+
+#: interface.php:468
+msgid "BIBINDEX_MENU_ADMIN_UPDATE_HELP"
+msgstr "Mettre à jour la bibliographie d'après le fichier BibTeX"
+
+#: interface.php:468
+msgid "BIBINDEX_MENU_ADMIN_UPDATE"
+msgstr "Mettre à jour (BibTeX)"
+
+#: interface.php:469
+msgid "BIBINDEX_MENU_ADMIN_IMPORT_HELP"
+msgstr "Importer des références BibTeX"
+
+#: interface.php:469
+msgid "BIBINDEX_MENU_ADMIN_IMPORT"
+msgstr "Importer BibTeX"
+
+#: interface.php:472
+msgid "BIBINDEX_MENU_ADMIN_LOGOUT_HELP"
+msgstr "Déconnexion..."
+
+#: interface.php:472
+msgid "BIBINDEX_MENU_ADMIN_LOGOUT"
+msgstr "Déconnexion"
+
+#: interface.php:501
+msgid "This is the bibliography"
+msgstr "Bibliographie"
+
+#: interface.php:504
+msgid "You are logged as"
+msgstr "Vous ête identifié en tant que"
+
+#: interface.php:510
+msgid "Statistics"
+msgstr "Statistiques"
+
+#: interface.php:514
+msgid "Number of recorded articles"
+msgstr "Nombre d'articles disponibles"
+
+#: interface.php:518
+msgid "On-line available publications"
+msgstr "Articles consultables"
+
+#: interface.php:537
+msgid "BibORB message"
+msgstr "Rapport de BibORB"
+
+#: interface.php:551
+msgid "BIBINDEX_DISPLAY_HELP_TITLE"
+msgstr "Affichage (Aide)"
+
+#: interface.php:563
+msgid "BIBINDEX_DISPLAY_ALL_TITLE"
+msgstr "Liste de toutes les références"
+
+#: interface.php:599
+msgid "BIBINDEX_DISPLAY_BY_GROUPS_TITLE"
+msgstr "Afficher les références par groupe"
+
+#: interface.php:609
+msgid "Available groups"
+msgstr "Groupes disponibles"
+
+#: interface.php:611
+msgid "Display"
+msgstr "Afficher"
+
+#: interface.php:627
+#, php-format
+msgid "No entry for the group %s."
+msgstr "Pas de référence pour le groupe <strong>%s</strong>."
+
+#: interface.php:630
+#, php-format
+msgid "An entry for the group %s."
+msgstr "Une référence pour le groupe <strong>%s</strong>."
+
+#: interface.php:633
+#, php-format
+msgid "%d entries for the group %s."
+msgstr "%d références pour le groupe %s."
+
+#: interface.php:660
+msgid "BIBINDEX_SIMPLE_SEARCH_TITLE"
+msgstr "Recherche"
+
+#: interface.php:668
+msgid "Search"
+msgstr "Rechercher"
+
+#: interface.php:677
+msgid "Author"
+msgstr "Auteur"
+
+#: interface.php:687
+msgid "Keywords"
+msgstr "Mots clés"
+
+#: interface.php:694
+msgid "Journal"
+msgstr "Journal"
+
+#: interface.php:793
+#, php-format
+msgid "One match for %s"
+msgstr "Une concordance pour %s"
+
+#: interface.php:797
+#, php-format
+msgid "%d match for %s."
+msgstr "%d concordances pour %s."
+
+#: interface.php:801
+#, php-format
+msgid "No match for %s."
+msgstr "Pas de concordance pour %s."
+
+#: interface.php:990
+msgid "BIBINDEX_BASKET_HELP_TITLE"
+msgstr "Panier (Aide)"
+
+#: interface.php:1002
+msgid "BIBINDEX_BASKET_DISPLAY_TITLE"
+msgstr "Références du Panier"
+
+#: interface.php:1015
+msgid "No entry in the basket."
+msgstr "Panier vide."
+
+#: interface.php:1020
+msgid "An entry in the basket."
+msgstr "Une référence dans le panier."
+
+#: interface.php:1023
+#, php-format
+msgid "%d entries in the basket."
+msgstr "%d références dans le panier."
+
+#: interface.php:1028
+msgid "Delete all from database"
+msgstr "Supprimer ces références de la bibliographie"
+
+#: interface.php:1047
+msgid "BIBINDEX_BASKET_GROUPS_MANAGE_TITLE"
+msgstr "Gestion des Groupes"
+
+#: interface.php:1057
+msgid "Reset the groups field of each entry in the basket. "
+msgstr "Réinitialiser les groupes pour chaque référence du panier."
+
+#: interface.php:1061
+msgid "Add all entries in the basket to a group:"
+msgstr "Ajouter toutes les références du panier au groupe: "
+
+#: interface.php:1065
+msgid "New group:"
+msgstr "Nouveau groupe :&nbsp;"
+
+#: interface.php:1072
+msgid "Existing group:"
+msgstr "Groupes disponibles :&nbsp;"
+
+#: interface.php:1090
+msgid "BIBINDEX_ADMIN_HELP_TITLE"
+msgstr "Administration (Aide)"
+
+#: interface.php:1104
+msgid "BIBINDEX_SELECT_NEW_ENTRY_TITLE"
+msgstr "Ajouter une référence (sélection du type)"
+
+#: interface.php:1110
+msgid "Select an entry type: "
+msgstr "Sélectionnez un type de référence : "
+
+#: interface.php:1145
+msgid "BIBINDEX_ADD_ENTRY_TITLE"
+msgstr "Ajouter une référence"
+
+#: interface.php:1198
+msgid "BibTeX type:"
+msgstr "Type BibTeX :"
+
+#: interface.php:1203
+msgid "BibTeX Key:"
+msgstr "Clé BibTeX: "
+
+#: interface.php:1226
+msgid "BIBINDEX_UPDATE_ENTRY_TITLE"
+msgstr "Mettre à jour une référence"
+
+#: interface.php:1239
+msgid "BIBINDEX_IMPORT_TITLE"
+msgstr "Importer des références BibTeX"
+
+#: interface.php:1240
+msgid "BIBINDEX_IMPORT_HELP"
+msgstr "Sélectionnez un fichier BibTeX ou copiez les références dans la zone de texte. "
+"Les références seront ajoutées à la bibliographie."
+
+
+msgid "BIBINDEX_IMPORT_FILE_DESC"
+msgstr "Fichier : "
+
+msgid "BIBINDEX_IMPORT_TXT_DESC"
+msgstr "Copier ou éditer des données BibTeX dans la zone de texte."
+
+#: interface.php:1241
+msgid "File"
+msgstr "Fichier"
+
+#: interface.php:1278
+msgid "BIBINDEX_EXPORT_TO_BIBTEX_TITLE"
+msgstr "Exporter le panier vers BibTeX"
+
+#: interface.php:1280
+msgid "Select fields to include in the exported BibTeX:"
+msgstr "Sélectionnez les champs à inclure dans l'exportation BibTeX"
+
+msgid "BIBINDEX_ADVANCED_SEARCH_TITLE"
+msgstr "Recherche Avancée"
+
+msgid "BIBORB_OUTPUT_REQUIRED_FIELDS"
+msgstr "Champs Obligatoires"
+
+msgid "BIBORB_OUTPUT_OPTIONAL_FIELDS"
+msgstr "Champs Optionnels"
+
+msgid "BIBORB_OUTPUT_ADDITIONAL_FIELDS"
+msgstr "Champs Additionnels"
+
+msgid "BIBORB_OUTPUT_ADD_A_GROUP"
+msgstr "Ajouter un groupe :"
+
+msgid "BIBORB_OUTPUT_BIBTEX_ALT"
+msgstr "BibTeX"
+
+msgid "BIBORB_OUTPUT_BIBTEX_TITLE"
+msgstr "Source BibTeX"
+
+msgid "BIBORB_OUTPUT_ABSTRACT_ALT"
+msgstr "Résumé"
+
+msgid "BIBORB_OUTPUT_ABSTRACT_TITLE"
+msgstr "Afficher le résumé"
+
+msgid "BIBORB_OUTPUT_PS_ALT"
+msgstr "ps"
+
+msgid "BIBORB_OUTPUT_PS_TITLE"
+msgstr "Fichier PostScript"
+
+msgid "BIBORB_OUTPUT_PSGZ_ALT"
+msgstr "ps.gz"
+
+msgid "BIBORB_OUTPUT_PSGZ_TITLE"
+msgstr "Fichier compressé"
+
+msgid "BIBORB_OUTPUT_PDF_ALT"
+msgstr "pdf"
+
+msgid "BIBORB_OUTPUT_PDF_TITLE"
+msgstr "Fichier PDF"
+
+msgid "BIBORB_OUTPUT_EDIT_ALT"
+msgstr "editer"
+
+msgid "BIBORB_OUTPUT_EDIT_TITLE"
+msgstr "Editer cette référence"
+
+msgid "BIBORB_OUTPUT_DELETE_ALT"
+msgstr "supprimer"
+
+msgid "BIBORB_OUTPUT_DELETE_TITLE"
+msgstr "Supprimer cette référence"
+
+msgid "BIBORB_OUTPUT_ADD_BASKET_ALT"
+msgstr "+"
+
+msgid "BIBORB_OUTPUT_ADD_BASKET_TITLE"
+msgstr "Ajouter cette référence au panier"
+
+msgid "BIBORB_OUTPUT_REMOVE_BASKET_ALT"
+msgstr "-"
+
+msgid "BIBORB_OUTPUT_REMOVE_BASKET_TITLE"
+msgstr "Supprimer cette référence du panier"
+
+msgid "BIBORB_OUTPUT_CURRENT_FILE"
+msgstr "Fichier actuel"
+
+msgid "BIBORB_OUTPUT_NEW_FILE"
+msgstr "Nouveau fichier"
+
+msgid "BIBORB_OUTPUT_WEBSITE_ALT"
+msgstr "Site web"
+
+msgid "BIBORB_OUTPUT_WEBSITE_TITLE"
+msgstr "Lien vers une page web associée"
+
+msgid "BIBORB_OUTPUT_LINK_ALT"
+msgstr "Lien"
+
+msgid "BIBORB_OUTPUT_LINK_TITLE"
+msgstr "Lien vers une page locale"
+
+msgid "BIBORB_OUTPUT_LONGNOTES_ALT"
+msgstr "Remarques"
+
+msgid "BIBORB_OUTPUT_LONGNOTES_TITLE"
+msgstr "Afficher les remarques pour cette référence"
+
+msgid "Import"
+msgstr "Importer"
+
+msgid "Editor"
+msgstr "Editeur"
+
+msgid "Connector:"
+msgstr "Connecteur:"
+
+msgid "and"
+msgstr "et"
+
+msgid "or"
+msgstr "ou"
+
+msgid "BibTeX Fields"
+msgstr "Champs BibTeX"
+
+msgid "BibORB Fields"
+msgstr "Champs BibORB"
+
+msgid "Display/ Hide search form"
+msgstr "Cacher/Afficher le formulaire de recherche"
+
+msgid "One match."
+msgstr "Une référence trouvée."
+
+msgid "%d matches."
+msgstr "%d références trouvées."
+
+msgid "No match."
+msgstr "Aucune référence ne vérifie la propriété."
+
+msgid "BibTeX ID already present, select a different one."
+msgstr "Clé BibTeX déjà présente, saisissez une clé différente."
+
+msgid "Null BibTeX ID for an entry not allowed."
+msgstr "Une Clé BibTeX vide n'est pas autorisée!"
+
+msgid "Back"
+msgstr "Retour"
+
+msgid "Language:"
+msgstr "Langue :"
+
+msgid "Entries associated with no group:"
+msgstr "Références n'appartenant à aucun groupe :"
+
+msgid "Orphans"
+msgstr "Orphelins"
+
+msgid "No orphan."
+msgstr "Pas de référence sans groupe."
+
+msgid "1 orphan."
+msgstr "Une référence sans groupe."
+
+msgid "%d orphans."
+msgstr "%d références n'appartiennent à aucun groupe."
+
+msgid "%d matches for %s."
+msgstr "%d concordances pour %s"
+
+msgid "TOOL_XPATH_TITLE"
+msgstr "Requète XPath"
+
+msgid "TOOL_XPATH_HELP"
+msgstr "XPath (XML Path Language) est une syntaxe pour désigner une portion d'un "
+" document XML. Les références étant stockées au format XML, vous pouvez effectuer "
+" des recherches dans votre bibliographie en utilisant XPath."
+" Par exemple:<ul>"
+" <li><code>bibtex:inproceedings</code> affichera toutes les références de type <code>"
+" inproceedings</code>.</li>"
+" <li><code>*/bibtex:year<=2004 and */bibtex:year>=2000</code> affichera toutes les "
+" références publiées entre les années 2000 et 2004</li></ul>"
+
+msgid "TOOL_AUX2BIBTEX_TITLE"
+msgstr ".aux vers BibTeX"
+
+msgid "TOOL_AUX2BIBTEX_HELP"
+msgstr "Lors de la compilation d'un fichier LaTeX (<code>article.tex</code>), "
+"les références citées sont enregistrées dans le fichier <code>article.aux</code>. "
+"Vous pouvez utiliser le formulaire suivant pour soumettre ce dernier "
+" afin de télécharger le fichier BibTeX contenant les références de votre article."
+
+msgid "BIBINDEX_TOOLS_TITLE"
+msgstr "Outils"
+
+msgid "TOOL_GET_ARCHIVE_TITLE"
+msgstr "Télécharger la bibliographie"
+
+msgid "TOOL_GET_ARCHIVE_HELP"
+msgstr "Télécharger une archive (<code>tar.gz</code>) de la bibliographie courante. "
+" L'archive contiendra les données BibTeX ainsi que les données uploadées (fichiers "
+" PS, PDF...). "
+
+msgid "Simple Search"
+msgstr "Recherche Simple"
+
+msgid "Advanced Search"
+msgstr "Recherche Avancée"
+
+msgid "XPath Search"
+msgstr "Recherche XPath"
+
+msgid "BIBINDEX_MENU_TOOLS_HELP"
+msgstr "Divers outils"
+
+msgid "BIBINDEX_XPATH_SEARCH_TITLE"
+msgstr "Recherche XPath"
+
+msgid "ascending"
+msgstr "croissant"
+
+msgid "descending"
+msgstr "décroissant"
+
+msgid "No orphan."
+msgstr "Toutes les références appartiennent à un groupe."
+
+# Translation of BibTeX field names
+msgid "id"
+msgstr "Clé BibTeX"
+
+msgid "address"
+msgstr "Adresse"
+
+msgid "annote"
+msgstr "Annotation"
+
+msgid "author"
+msgstr "Auteur"
+
+msgid "booktitle"
+msgstr "Titre du livre"
+
+msgid "chapter"
+msgstr "Chapitre"
+
+msgid "crossref"
+msgstr "Référence croisée"
+
+msgid "edition"
+msgstr "Edition"
+
+msgid "editor"
+msgstr "Rédacteur"
+
+msgid "howpublished"
+msgstr ""
+
+msgid "institution"
+msgstr "Institution"
+
+msgid "journal"
+msgstr "Revue"
+
+msgid "key"
+msgstr "Clé"
+
+msgid "month"
+msgstr "Mois"
+
+msgid "note"
+msgstr "Note"
+
+msgid "number"
+msgstr "Numéro"
+
+msgid "organization"
+msgstr "Organisation"
+
+msgid "pages"
+msgstr "Pages"
+
+msgid "publisher"
+msgstr "Editeur"
+
+msgid "school"
+msgstr "Ecole"
+
+msgid "series"
+msgstr "Séries"
+
+msgid "title"
+msgstr "Titre"
+
+msgid "type"
+msgstr "Type"
+
+msgid "volume"
+msgstr "Volume"
+
+msgid "year"
+msgstr "Année"
+
+msgid "abstract"
+msgstr "Résumé"
+
+msgid "keywords"
+msgstr "Mots-clés"
+
+msgid "url"
+msgstr "Fichier ps"
+
+msgid "urlzip"
+msgstr "Fichier ps.gz"
+
+msgid "pdf"
+msgstr "Fichier PDF"
+
+msgid "groups"
+msgstr "Groupes"
+
+msgid "website"
+msgstr "Site Web"
+
+msgid "longnotes"
+msgstr "Remarques"
+
+msgid "link"
+msgstr "Lien"
+
+msgid "BIBORB_OUTPUT_OWN_ALT"
+msgstr "Disponible"
+
+msgid "BIBORB_OUTPUT_OWN_TITLE"
+msgstr "Status actuel : Disponible. Status après clic : Non Disponible."
+
+msgid "BIBORB_OUTPUT_BORROW_ALT"
+msgstr "Emprunté"
+
+msgid "BIBORB_OUTPUT_BORROW_TITLE"
+msgstr "Status actuel : Emprunté. Status après clic : A acheter."
+
+msgid "BIBORB_OUTPUT_BUY_ALT"
+msgstr "A Acheter"
+
+msgid "BIBORB_OUTPUT_BUY_TITLE"
+msgstr "Status actuel : A Acheter. Status après clic : Disponible."
+
+msgid "BIBORB_OUTPUT_NOTOWN_ALT"
+msgstr "Non Disponible"
+
+msgid "BIBORB_OUTPUT_NOTOWN_TITLE"
+msgstr "Status actuel : Non Disponible. Status après clic : Emprunté."
+
+msgid "BIBORB_OUTPUT_READ_ALT"
+msgstr "Lu"
+
+msgid "BIBORB_OUTPUT_READ_TITLE"
+msgstr "Status actuel : Lu. Status après clic : Non Lu."
+
+msgid "BIBORB_OUTPUT_READNEXT_ALT"
+msgstr "A Lire"
+
+msgid "BIBORB_OUTPUT_READNEXT_TITLE"
+msgstr "Status actuel : A Lire. Status après clic : Lu."
+
+msgid "BIBORB_OUTPUT_NOTREAD_ALT"
+msgstr "Non Lu"
+
+msgid "BIBORB_OUTPUT_NOTREAD_TITLE"
+msgstr "Status actuel : Non Lu. Status après clic : A Lire."
+
+msgid "Read Status"
+msgstr "Etat de lecture"
+
+msgid "Ownership"
+msgstr "Disponibilité"
+
+msgid "Read"
+msgstr "Lu"
+
+msgid "Not Read"
+msgstr "Non Lu"
+
+msgid "Read Next"
+msgstr "A Lire"
+
+msgid "Not Own"
+msgstr "Non Disponible"
+
+msgid "Own"
+msgstr "Disponible"
+
+msgid "Borrowed"
+msgstr "Emprunté"
+
+msgid "Buy"
+msgstr "A Acheter"
+
+msgid "Choose a file:"
+msgstr "Choisir un fichier :"
+
+msgid "Enter an url:"
+msgstr "Saisir une URL :"
+
+msgid "PREFERENCES_TITLE"
+msgstr "Préférences utilisateur"
+
+msgid "Preferences updated."
+msgstr "Préférences mises à jour."
+
+msgid "Select your language."
+msgstr "Sélectionner la langue."
+
+msgid "Select the default database to open once logged in."
+msgstr "Sélectionner la bibliograpie à ouvrir par défaut."
+
+msgid "Display icons commands."
+msgstr "Afficher les icones de commande."
+
+msgid "Display text commands."
+msgstr "Afficher les textes de commande."
+
+msgid "Display abstract."
+msgstr "Afficher les abstract."
+
+msgid "Warn before deleting."
+msgstr "Avertir avant suppression."
+
+msgid "Display sort functions."
+msgstr "Afficher les fonctions de tris."
+
+msgid "Default sort attribute."
+msgstr "Critère de tri."
+
+msgid "Default sort order."
+msgstr "Ordre du tri."
+
+msgid "Number of references by page."
+msgstr "Nombre de références par page."
+
+msgid "Display shelf actions."
+msgstr "Affichers les actions du mode 'Etagère'"
+
+msgid "ID"
+msgstr ""
+
+msgid "dateAdded"
+msgstr "Date d'ajout"
+
+msgid "lastDateModified"
+msgstr "Date de dernière modification"
+
+msgid "BIBINDEX_MENU_BROWSE"
+msgstr "Naviguer"
+
+msgid "BIBINDEX_MENU_BROWSE_HELP"
+msgstr "Naviguer dans la bibliographie."
+
+msgid "BIBINDEX_BROWSE_TITLE"
+msgstr "Explorer"
+
+msgid "Years"
+msgstr "Années"
+
+msgid "Authors"
+msgstr "Auteurs"
+
+msgid "Series"
+msgstr "Séries"
+
+msgid "Journals"
+msgstr "Revues"
+
+msgid "Groups"
+msgstr "Groupes"
+
+msgid "INDEX_MENU_PREFERENCES"
+msgstr "Préférences"
+
+msgid "INDEX_MENU_PREFERENCES_HELP"
+msgstr "Définir les préférences utilisateur."
+
+msgid "Existing years:"
+msgstr "Années présentes :"
+
+msgid "Existing authors:"
+msgstr "Auteurs présents :"
+
+msgid "Existing journals:"
+msgstr "Revues présentes :"
+
+msgid "Existing groups:"
+msgstr "Groupes présents :"
+
+msgid "Existing series:"
+msgstr "Séries présentes :"
+
+msgid "BIBINDEX_MENU_BASKET_EXPORT_HELP"
+msgstr "Exporter le panier vers un format bibliographique."
+
+msgid "BIBINDEX_MENU_BASKET_EXPORT"
+msgstr "Exporter..."
+
+msgid "Select an export format:"
+msgstr "Sélection d'un format pour l'export :"
+
+msgid "BIBINDEX_EXPORT_BASKET"
+msgstr "Export Basket"
+
+msgid "BIBINDEX_MENU_ADMIN_PREF"
+msgstr "Préférences"
+
+msgid "BIBINDEX_MENU_ADMIN_PREF_HELP"
+msgstr "Editer vos préférences."
+
+msgid "Available BibTeX fields"
+msgstr "Champs BibTeX"
+
+msgid "TOOL_EXPORT_TITLE"
+msgstr "Exporter"
+
+msgid "TOOL_EXPORT_HELP"
+msgstr "Exporter toutes les références dans un format bibliographique (BibTeX, RIS, DocBook)."

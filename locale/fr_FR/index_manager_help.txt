@@ -1,0 +1,17 @@
+<p>
+Ce menu donne accès aux fonctions de création et suppression de bibliographies.
+</p>
+
+<table class='help'>
+       <tbody>
+		<tr class='colored'>
+			<th>Ajouter une bibliographie</th>
+			<td>Créer une nouvelle bibliographie.</td>
+		</tr>
+		<tr>
+			<th>Supprimer une bibliographie.</th>
+			<td>La bibliographie sera déplacée dans <code>bibs/.trash</code>. Pour l'effacer définitivement, supprimez la manuellement de ce répertoire.</td>
+		</tr>
+	</tbody>
+</table>
+

@@ -1,0 +1,40 @@
+<acronym class='biborb'>BibORB 2014</acronym> &egrave un tool
+che consente di gestire e consultare bibliografie BibTeX usando
+un web browser.
+
+<p> Originariamente il suo scopo principale era di permettere di condividere bibliografie su una rete locale e di accedere semplicemente a versioni elettroniche di articoli. &Egrave; cresciuto poi fino a permettere la creazione e cancellazione di bibliografie, e poi &egrave; stato aggiunto il supporto per la modifica di elementi BibTex, creando cos&igrave; una semplice interfaccia web per BibTex.
+</p>
+
+<span class='biborb'>BibORB</span> ad oggi supporta:
+<ul>
+    <li> Estese funzionalit&agrave; attraverso l'interfaccia web, tra le quali:
+    <ul>
+        <li> Importazione di bibliografie <acronym>BibTeX</acronym>.</li>
+        <li> Aggiunta / Cancellazione di bibliografie.</li>
+        <li> Esportazione di  bibliografie in formato <acronym>BibTeX</acronym>.</li>
+        <li> Consultazione di diverse bibliographies.</li>
+        <li> Aggiunta / Cancellazione / Modifica di riferimenti.</li>
+        <li> Upload di versioni elettroniche di papers (.ps, .ps. gz, .pdf).</li>
+        <li> Aggiuta di link a pagine web rilevanti (internet, server).</li>
+        <li> Ricerca in una bibliografia (semplice, dettagliata, XPath).</li>
+        <li> Classificazione di riferimenti per gruppi.</li>
+        <li> Selezione di referimenti (funzione carrello).</li>
+        <li> Esportazione carrello nei formati <acronym>BibTeX</acronym>,<acronym>HTML</acronym> </li>
+        <li> Generazione del file <acronym>BibTeX</acronym> associato ad un file <acronym>LaTeX</acronym> <code>.aux</code>. </li>
+    </ul>
+    </li>
+
+    <li> &Egrave; anche possibile usare il proprio text-editor preferito per modificare il file bib e poi cliccare su "Aggiorna da BibTexX" per aggiornare il database. Questa bibliografia pu&ograve; poi essere consultata  ecc. come sopra descritto.
+    </li>
+</ul>
+
+<p><acronym class='biborb'>BibORB 2014</acronym> supporta anche
+un semplice metodo di autenticazione di base per limitare
+l'accesso in scrittura alle bibliografie.</p>
+
+<hr/> <span style="font-family:serif"><acronym
+class='biborb'>BibORB 2014</acronym> $biborb_version release,
+$date_release<br/> Rilasciato sotto licenza GPL.<br/>
+Aggiornamenti e informazioni sono disponibili presso <a
+href="https://biborb2014.codeplex.com/" target="blank"><acronym
+class='biborb'>BibORB 2014</acronym> website</a></span>

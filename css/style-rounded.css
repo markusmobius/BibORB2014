@@ -1,0 +1,332 @@
+/**
+ *
+ * This file is part of BibORB
+ * 
+ * Copyright (C) 2003  Guillaume Gardey
+ * 
+ * BibORB is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU General Public License
+ * as published by the Free Software Foundation; either version 2
+ * of the License, or (at your option) any later version.
+ * 
+ * BibORB is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ * 
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+ * 
+ */
+ 
+/**
+ * 
+ * File: style.css
+ * Author: Guillaume Gardey (ggardey@club-internet.fr)
+ * Year: 2003
+ * Licence: GPL
+ * 
+ * Description:
+ * 
+ *      The artist's playground. :) 
+ * 
+ */
+
+
+@import url(bibtex_table_look_rounded.css);
+@import url(bibtex_simple_html_look.css);
+
+
+body {
+    font-family:"Gill Sans",verdana,sans-serif;
+    font-size:small;
+    background-color:white;
+    color:black;
+}
+
+/**
+ * Style for the Menu 
+ */
+#bibname {
+    font-weight:bold;
+    text-align:center;
+    display:block;
+    color:navy;
+    border-top:solid black;
+    border-bottom:solid black;
+    margin-bottom:0.5em;
+}
+
+#title {
+    font-weight:bold;
+    text-align:center;
+    display:block;
+    font-size:x-large;
+    text-shadow: #666 2px 2px 2px;
+    letter-spacing:1px;
+}
+
+html > body #menu {position:fixed;}
+
+#menu {
+    position:relative;
+    float:left;
+    text-shadow:#bbb 2px 2px 3px;
+    background-color:#ddd;
+    border-left:solid 0.5em transparent;
+    border-right:solid 0.5em transparent;
+    padding:0;
+}
+
+#menu:before {
+    background: #ddd url(top-right.png) scroll no-repeat top right;
+    height: 30px;
+    margin: 0 -6px  0  -0.5em ;
+    display: block;
+    content: url(top-left.png);
+}
+
+#menu:after {
+  display: block;
+  content:  url(bottom-left.png);
+  margin: 0 -0.5em -0.5em -0.5em;
+  height: 30px;
+  background: #ddd url(bottom-right.png) scroll no-repeat bottom right ;
+}
+
+
+#menu ul {
+    margin:0;
+    padding:0;
+    list-style-type:none;
+}
+
+#menu li {
+    margin:0;
+}
+
+#menu a {
+    display: block;
+    color: #333;
+    background-color: transparent;
+    width: 160px;
+    padding: 2px 5px;
+    font-weight: bold;
+    text-decoration:none;
+    border: 1px solid #aaa;
+    font-size:small;
+} 
+
+#menu a:hover {
+    background-color: #aae;
+    color: #333;
+    padding: 2px 5px;
+}
+
+#menu ul ul {
+    margin-left:10px;
+    margin-bottom:10px;
+    padding:0;
+    list-style-type:none;
+    border-bottom:1px dashed #aaa;
+}
+
+#menu li li a {
+    display: block;
+    color: #333;
+    background-color: transparent;
+    width: 150px;
+    padding: 2px 5px;
+    margin:0;
+    border-top: none;
+    border-bottom: none;
+    border-left: 1px dashed #aaa;
+    border-right: 1px dashed #aaa;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+
+#menu li li a:hover{
+    background-color:#ade;
+    color:black;
+}
+
+#menu li li a.admin:hover {
+    background-color:#e44;
+    color:black;
+}
+
+
+/**
+ * Style for the main panel
+ */
+#main {
+    position:relative;
+    float:middle;
+    width:65%;
+    margin-left:200px;
+    margin-top:1em;
+    padding:1em;
+    background-color:#ddf;
+}
+
+#main:before {
+  background: transparent url(top-right.png) scroll no-repeat top right;
+  margin: -1em -1em -20px -1em;
+  height: 30px;
+  display: block;
+  border: none;
+  content: url(top-left.png);
+  padding:0;
+}
+
+
+#main:after {
+    background: transparent url(bottom-right.png) scroll no-repeat bottom right ;
+    display: block;
+    content:  url(bottom-left.png);
+    margin-left: -1em;
+    margin-right: -1em;
+    margin-bottom: -1em;
+    height: 30px;
+    padding: 0;
+}
+
+.main_title {
+  color:navy;
+  text-align:center;
+  border-bottom:dashed 2px gray;
+  margin-bottom:2em;
+  text-shadow:#666 2px 2px 2px;
+}
+
+#error_title {
+    color:red;
+    font-weight:bold;
+    font-size:x-large;
+    text-align:center;
+    display:block;
+    padding-bottom:1em;
+}
+
+#error {
+    color:red;
+    border:1px solid red;
+    margin:1em;
+    padding:1em;
+    text-align:center;
+}
+
+#message_title {
+    color:navy;
+    font-weight:bold;
+    font-size:x-large;
+    text-align:center;
+    display:block;
+    padding-bottom:1em;
+}
+
+#message { 
+    color:navy;
+    border:1px solid navy;
+    margin:1em;
+    padding:1em;
+}
+
+#content {
+    margin:auto;
+}
+
+/**
+ * Style for the table recording available databases
+ */
+
+#available_bibliographies table {
+    border-collapse:collapse;
+    margin:auto;
+}
+
+#available_bibliographies th {
+    border-bottom:3px solid black;
+#    background-color:#ccc;
+    margin:2px;
+}
+
+#available_bibliographies tr:hover {
+    background-color:#ccc;
+}
+
+#available_bibliographies td {
+    padding:0.5em;
+    border-bottom:dashed 1px black;
+}
+
+a.download, a:visited.download {
+    color:blue;
+    text-decoration:none;
+}
+
+a.bibname, a:visited.bibname { 
+    text-decoration:none;
+    color:navy;
+    font-weight:bold;
+    display:block;
+}
+
+.bib_description {
+    font-style:italic;
+}
+
+
+.biborb {
+    font-weight:bold;
+    color:navy;
+}
+
+.misc_input {
+
+}
+
+
+.misc_button {
+}
+
+.emphit {
+    font-weight:bold;
+    font-style:italic;
+}
+
+a.cleanref, a:hover.cleanref, a:visited.cleanref {
+    color:navy;
+    text-decoration:none;
+}
+
+a.admin, a.admin:visited, a.admin:hover {
+    color:red;
+    text-decoration:none;
+}
+
+.fieldset {
+    border: none;
+    text-align:center;
+    margin:0;
+    padding:0;
+}
+
+.fieldset label {
+	text-align:right;
+	width:90px;
+    float:left;
+    padding-top:0.3em;
+    margin:0;
+    font-weight:bold;
+    font-style:italic;
+}
+
+.fieldset .textfield {
+	width:100px;
+    margin:3px;
+    padding:0;
+}

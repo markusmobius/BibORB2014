@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11-strict.dtd">
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name='robots' content='noindex,nofollow'/>
+    <meta http-equiv="content-type" content="text/html; charset=iso-8859-1"/>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <title>BibORB &amp; i18n</title>
+</head>
+
+<body>
+
+<div id="main_container">
+<div id="main">
+<h1>BibORB &amp; Internationalization</h1>
+    <p>This page presents how to add the support of a new language into BibORB.</p>
+    
+<div id="content">
+
+<div class="topic" id="help_localization">
+    <h3>Internationalization</h3>
+    <div class="topic_content">
+    <p><a href="http://www.gnu.org/software/gettext/manual/gettext.html">Gettext</a> methods are used to provide the localization of BibORB.</p>
+
+    <p>The <code class='file'>locale</code> directory contains localized data used to display messages in a selected language. By default, english is used (<code class='constant'>en_US</code>      directory) if data are missing for a given language.</p>
+
+    <p>If you want to add the support for a language:</p>
+
+    <ol>
+        <li>Copy the <code class='constant'>en_US</code> directory and rename it into the name of your
+locale. Its name must be of type <code class='constant'>lg_CO</code> where:
+            <ul>
+                <li><code class='constant'>lg</code> is the ISO 639 standard definition for your 
+                language. A list is available in the <a href="http://www.gnu.org/software/gettext/manual/html_chapter/gettext_15.html#SEC221">Gettext manual</a>.</li>
+                <li><code class='constant'>CO</code> is the ISO 3166 standard definition for your country. A list is available in the <a href="http://www.gnu.org/software/gettext/manual/html_chapter/gettext_16.html#SEC222">Gettext manual</a>.</li>
+            </ul>
+        </li>
+        <li>Translate each <code class='file'>.txt</code> files.</li>
+        <li>Edit the <code class='file'>biborb.po</code> file and translate each string starting with 
+<code class='variable'>msgstr</code>.
+    For instance:<br/>
+        Original File:
+        <pre>
+            msgid "Update"
+            msgstr ""</pre>
+        Localized File:
+        <pre>
+            msgid "Update"
+            msgstr "Mettre à jour"</pre>
+        </li>
+            
+        <li><span style='text-decoration:line-through'>Compile the <code class='file'>biborb.po</code> file.</span>
+        <pre style='text-decoration:line-through'>
+        msgfmt -o biborb.mo biborb.po</pre>
+        <span style='font-style:italic;color:red'>Due to some problems in correctly setting up i18n and PHP, PHP gettext methods are not called. Only the translation file (.po) suffices to localize BibORB.</span>
+        </li>
+        
+    
+        <li>Edit the <code class='file'>config.php</code> file and set the <code class='variable'>$language</code> variable to the name of your locale (if you want it to be selected by default) or select it within BibORB if you have set <code class='variable'>$display_language_selection</code> to <code class='constant'>TRUE</code>.</li>
+    
+        <li><span style='text-decoration:line-through'>If the localization doesn't show, restart the web server to force it to reload the localization data.</span></li>
+        <li><code class='file'>biborb.js</code> also contains strings to be translated.</li>
+        <li>If everything is OK, you could send me an archive of your newly created locale directory, I will add it to future releases of BibORB :).</li>
+    </ol>
+    </div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<p>
+    Ce menu donne accès aux fonctions d'administration. Selon la configuration
+    de <acronym class='biborb'>BibORB</acronym> vous pouvez ajouter, importer des
+    références ou mettre à jour la bibliographie.
+</p>
+
+<table class='help'>
+	<tbody>
+		<tr class='colored'>
+			<th>S'Identifier</th>
+			<td>S'Identifier pour avoir accès aux fonctions d'ajout et d'importation.</td>
+		</tr>
+		<tr>
+			<th>Déconnexion</th>
+			<td>Déconnexion</td>
+		</tr>
+		<tr class='colored'>
+			<th>Ajouter une référence</th>
+			<td/>
+		</tr>
+		<tr>
+			<th>Mettre à jour (BibTeX)</th>
+			<td>La bibliographie est mise à jour en fonction du fichier .bib 
+			présent dans le répertoire de la bibliographie. Utilisez-le si vous éditez votre bibliographie (avec un éditeur de texte ou un autre outil) pour mettre à jour les informations.</td>
+		</tr>
+		<tr class='colored'>
+			<th>Importer BibTeX</th>
+			<td>Importer les références contenues dans une chaîne <acronym>BibTeX</acronym>
+			ou dans un fichier <code>.bib</code>. Les macros <code>@string</code> seront
+			résolues et remplacées.</td>
+		</tr>
+	</tbody>
+</table>
+<br/>

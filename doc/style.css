@@ -1,0 +1,50 @@
+body {
+  font-family: Georgia, Verdana, Arial, Helvetica, serif, monospace;
+  font-size:12px;
+  color:black;
+  margin:0;
+  padding:0;
+}
+
+#main {padding:1em;margin:auto;width:700px;}
+#main h1 {text-align:center;}
+#main h3 {text-shadow: #888 1px 1px 2px;color:navy;}
+#main h4 {border-bottom:solid 1px black;}
+#main p {text-align:justify;}
+
+.email {font-weight:bold;color:navy;}
+.column {width:40%;height:150px;padding:0.5em;float:left;}
+
+.item_title {font-weight:bold;}
+.item_description {font-style:italic;margin-left:1em;color:#555;}
+.center {text-align:center;}
+.info {text-align:center;font-size:10px;}
+
+#main a , #main a:visited, .info a, .info a:visited {text-decoration:none;color:navy;border-bottom:dotted 1px navy;}
+
+#index {margin:0;padding:0;width:auto;}
+#index ul {margin:0;padding:0;list-style-type:none;border:none;}
+#index ul li {margin:0;padding:0;}
+#index .doc_details {margin-left:50px;margin-top:0;font-style:italic;}
+#index .doc_details ul {list-style-type:disc;margin-left:50px;}
+#index .doc_details ul li {margin-left:15Opx;}
+#index h3 {font-weight:bold;border-bottom:solid 2px navy;color:black;}
+//#index ul li a, #index ul li a:visited {text-decoration: none;color:black;font-size:x-small;font-weight:bold;}
+//#index ul li a:hover {color:red;background-color:navy;}
+
+#content {}
+
+.topic{}
+.topic h3 {font-weight:bold;border-bottom:solid 2px navy;color:black;}
+.topic_content{margin-left:2em;text-align:justify;}
+
+#content pre{background-color:#ddd;border:solid 1px gray;}
+
+.emphcode{
+    font-weight:bold;
+    color:red;
+}
+
+code.file {font-weight:bold;}
+code.variable {font-weight:bold;color:darkgreen;}
+code.constant {font-weight:bold;color:red;}

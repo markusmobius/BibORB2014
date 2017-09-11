@@ -1,0 +1,202 @@
+/**
+ *
+ * This file is part of BibORB
+ * 
+ * Copyright (C) 2003-2005  Guillaume Gardey (ggardey@club-internet.fr)
+ * 
+ * BibORB is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU General Public License
+ * as published by the Free Software Foundation; either version 2
+ * of the License, or (at your option) any later version.
+ * 
+ * BibORB is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ * 
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+ * 
+ */
+ 
+/**
+ * 
+ * File: bibtex_table_look.css
+ * Author: Guillaume Gardey (ggardey@club-internet.fr)
+ * Year: 2003-2004
+ * Licence: GPL
+ * 
+ * Description:
+ * 
+ *      The artist's playground. :) 
+ *      This file defines the look of displayed entries in BibORB interface.
+ * 
+ */
+
+
+/* Main look of the table */
+#bibtex_table {
+    color:black;
+    width:100%;
+    border-collapse:collapse;
+    border-spacing:0;
+    font-size:small;
+}
+
+/* Look of the first row (the one that contains is, ps, pdf, and miscelaneous
+links */
+#bibtex_table .bibtex_start {
+    border-top:solid 1px navy;
+    color:navy;
+}
+
+/* Look of the bibtex id */
+#bibtex_table .bibtex_key {
+    color:#666;
+    /*border:solid 1px #333;*/
+    border-bottom:none;
+    /*background-color:#ddd;*/
+    font-weight:bold;
+    font-size:x-small;
+	display:inline;
+	float:left;
+/*	min-width:12em;*/
+	position:relative;
+	padding-left:2px;
+	padding-right:2px;
+	padding-bottom:2px;
+	left:-1px;
+	top:2px;
+}
+
+/* look for the div containing url, pdf, bibtex... */
+#bibtex_table .bibtex_misc {
+	float:left;
+}
+
+/* look for the div containing basket/admin action */
+#bibtex_table .command {
+	float:right;
+	display:inline;
+}
+
+/* Look for bibtex action link (edit, modify) */
+#bibtex_table a.bibtex_action, #bibtex_table a.bibtex_action:hover, #bibtex_table a.bibtex_action:visited {
+    color:red;
+}
+
+/* look for basket action (add, remove from basket) */
+#bibtex_table a.basket_action,#bibtex_table a.basket_action:hover, #bibtex_table a.basket_action:visited {
+    display:inline;
+    font-family:serif;
+    color:navy;
+}
+
+
+/* look for the title */
+#bibtex_table .bibtex_title {
+    font-weight:bold;
+    border-bottom:dotted 1px;
+    border-top:solid 1px #333;
+    border-left:solid 1px #333;
+    border-right:solid 1px #333;
+    background-color:#eee;
+}
+
+/* look for authors */
+#bibtex_table .bibtex_author {
+    font-style:italic;
+    text-align:right;
+    border-left:solid 1px #333;
+    border-right:solid 1px #333;
+    background-color:#eee;
+}
+
+/* look for abstract */
+#bibtex_table .bibtex_abstract {
+    font-size:x-small;
+    background-color:#eee;
+    border-left:solid 1px #333;
+    border-right:solid 1px #333;
+    font-family:verdana;
+}
+
+/* look for keywords */
+#bibtex_table .bibtex_keywords {
+    font-family:monospace;
+    font-size:x-small;
+    text-align:right;
+    background-color:#eee;
+    border-left:solid 1px #333;
+    border-right:solid 1px #333;
+    border-bottom:solid 1px #333;
+}
+
+/* look for images */
+#bibtex_table img, img {
+    border:none;
+    vertical-align:middle;
+}
+
+/* look for the last empty line */
+.last {
+    font-size:5px;
+}
+
+
+/* look for links */
+#bibtex_table a, #bibtex_table a:hover,#bibtex_table a:active,#bibtex_table a:visited,#bibtex_table a:focus {
+    text-decoration:none;
+    display:inline;
+    padding-left:2px;
+    padding-right:2px;
+    color:#088;
+    font-size:x-small;
+    font-weight:bold;
+}
+
+/* look for shelf mode */
+#bibtex_table .shelf_mode {
+    font-weight:bold;
+    font-size:x-small;
+}
+
+/* style for "add all entries to basket */
+.addtobasket {
+    color:navy;
+    text-align:right;
+    float:right;
+    position:relative;
+    top:-1.5em;
+}
+.addtobasket a,.addtobasket a:hover,.addtobasket a:active,.addtobasket a:visited,.addtobasket a:focus {
+    text-decoration:none;
+}
+
+/* look when entry present in basket */
+.inbasket {
+	background-color: #f7f3b6;
+}
+
+/* result header */
+.result_header {
+}
+
+/* look of sort form */
+.sort {font-size:x-small}
+.sort fieldset {
+    margin:0;
+    padding:0;
+    border:none;
+    vertical-align:middle;
+    display:inline;
+    font-size:x-small;
+}
+
+.sort form {
+    display:inline;
+    border:none;
+    margin:0;
+    padding:0;
+}

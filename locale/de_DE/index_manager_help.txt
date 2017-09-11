@@ -1,0 +1,18 @@
+<p>
+Der Manager erlaubt das Bearbeiten und Löschen von Bibliographien.
+</p>
+
+<table class='help'>
+       <tbody>
+		<tr class='colored'>
+			<th>Hinzufügen einer Bibliographie</th>
+			<td>Die nötigen Dateien zum speichern der Bibliographie werden erzeugt. Eine existierende BibTeX Bibliographie könnte dann über das Import-Menü importiert werden.</td>
+		</tr>
+		<tr>
+			<th>Löschen einer Bibliographie </th>
+			<td style='text-align:justify'>Die ausgewählte Bibliographie wird in das <code>bibs/.trash</code> Verzeichnis bewegt und von der Liste der verfügbaren Bibliographien gelöscht. Um die Bibliographie endgültig zulöschen muss sie aus dem <code>bibs/.trash</code> Verzeichnis per Hand entfernt werden.
+</td>
+		</tr>
+	</tbody>
+</table>
+

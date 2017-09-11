@@ -1,0 +1,246 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11-strict.dtd">
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name='robots' content='noindex,nofollow'/>
+    <meta http-equiv="content-type" content="text/html; charset=iso-8859-1"/>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <title>Configuring BibORB</title>
+</head>
+
+<body>
+
+<div id="main_container">
+<div id="main">
+    <h1>Configure BibORB</h1>
+    <p>This page presents configuration options that are available in BibORB 1.3.3  (<code class='file'>config.php</code>).</p>
+    
+<div id="index">
+    <h3>Index</h3>
+    <ul>
+        <li><a href="#help_localization">Localization</a></li>
+        <li><a href="#help_authentication">Authentication</a></li>
+        <li><a href="#help_delete">Delete entries</a></li>
+        <li><a href="#help_icons">Display icons/text actions</a></li>
+        <li><a href="#help_abstract">Display abstract</a></li>
+        <li><a href="#help_sort">Sorting entries</a></li>
+        <li><a href="#help_export">Export entries to <acronym>BibTeX</acronym></a></li>
+        <li><a href="#help_nb_display">Select the number of references to display in a page</a></li>
+        <li><a href="#help_gen_bibtex">Keep an up-to-date BibTeX copy of the database</a></li>
+        <li><a href="#shelf_mode">Shelf mode</a></li>
+        <li><a href="#help_permissions">Permissions</a></li>
+    </ul>
+</div>
+
+<div id="content">
+
+<div class="topic" id="help_localization">
+    <h3>Localization</h3>
+    <div class="topic_content">
+        <pre>
+/**
+ * Localization
+ * Available: en_US, fr_FR, de_DE, it_IT
+ */
+define("DEFAULT_LANG",'en_US');
+
+/**
+ * Show available languages on BibORB pages
+ * TRUE/FALSE
+ */
+define("DISPLAY_LANG_SELECTION",TRUE);</pre>
+        <p>Use the <code class='variable'>DEFAULT_LANG</code> variable to select the default language that should be used in <acronym class='biborb'>BibORB</acronym>.</p>
+        <p>Use the <code class='variable'>DISPLAY_LANG_SELECTION</code> to enable people to select their language within the <acronym class='biborb'>BibORB</acronym> interface. If this variable is set to <code class='constant'>FALSE</code> then the interface is localized using the value of <code class='variable'>DEFAULT_LANG</code>.</p>
+    </div>
+</div>
+
+<div class="topic" id="help_authentication">
+    <h3>Authentication</h3>
+    <div class="topic_content">
+        <pre>
+/**
+ * If TRUE, this will disable authentification.
+ * All users will have the administrator status
+ */
+define("DISABLE_AUTHENTICATION",TRUE);
+
+/**
+ * Authentication methods: mysql, files
+ * Used if DISABLE_AUTHENTICATION = FALSE
+ */
+define("AUTH_METHOD",'files');</pre>
+        <p>If you want to share your bibliography within a local network, you may not want other people to edit or even delete your data. If <code class='variable'>DISABLE_AUTHENTICATION</code> is set to <code class='constant'>FALSE</code>, user must login to be able to add, delete or update references. See <a href='./doc_auth.html'>Authentication Help</a> to set up correctly BibORB to use the authentication method defined (<code class='variable'>AUTH_METHOD</code>).</p>
+    </div>
+</div>
+
+<div class="topic" id="help_delete">
+    <h3>Delete entries</h3>
+    <div class="topic_content">
+        <pre>
+/**
+ *  Should a confirmation be displayed when deleting entries
+ */
+define("WARN_BEFORE_DELETING",TRUE);</pre>
+        <p>When a user has the authorization to delete entries, a confirmation message may be display when deleting entries. Set this variable to <code class='constant'>TRUE</code> if you want this message to be displayed.</p>
+    </div>
+</div>
+
+<div class="topic" id="help_icons">
+    <h3>Display icons/text actions</h3>
+    <div class="topic_content">
+        <pre>
+/**
+ * Should action be represented by icons or not.
+ */
+define("DISPLAY_IMAGES",TRUE);
+
+/**
+ *  Sould action be represented by text or not.
+ */
+define("DISPLAY_TEXT",FALSE);</pre>
+        <p>Actions on a reference (edit, delete, get ps, ps.gz, pdf ...) are available in both text format or icons. Set <code class='variable'>DISPLAY_IMAGES</code> and <code class='variable'>DISPLAY_TEXT</code> to display both or only one of them.</p> 
+    </div>
+</div>
+
+<div class="topic" id="help_abstract">
+    <h3>Display abstract</h3>
+    <div class="topic_content">
+        <pre>
+/**
+ * Should the abstract be present for each entry.
+ */
+define("DISPLAY_ABSTRACT",FALSE);</pre>
+        <p>Set the <code class='variable'>DISPLAY_ABSTRACT</code> variable to <code class='constant'>TRUE</code> if you want the abstract to be always displayed. If <code class='constant'>FALSE</code>, the abstract is displayed only if you click on the abstract action.</p>
+    </div>
+</div>
+
+<div class="topic" id="help_sort">
+    <h3>Sorting entries</h3>
+    <div class="topic_content">
+        <pre>
+/**
+ * Display sort in all/group/search view
+ * If no, displayed only on search
+ * TRUE/FALSE
+ */
+define("DISPLAY_SORT",TRUE);
+
+/**
+ * Default sort method: ID,title,year
+ * and order: ascending/descending
+ */
+define("DEFAULT_SORT","ID");
+define("DEFAULT_SORT_ORDER","ascending");</pre>
+        <p>It is possible to select which is the default sort method to display references. Presently, three sort method are provided: title, year and bibtex key.</p>
+        <p>Set <code class='variable'>DISPLAY_SORT</code> to <code class='constant'>TRUE</code> if you want to choose the sort method to use in BibORB.</p>
+    </div>
+</div>
+
+<div class="topic" id="help_export">
+    <h3>Export entries to <acronym>BibTeX</acronym></h3>
+    <div class="topic_content">
+        <pre>
+/**
+ * Choose which fields to save when exporting an entry to bibtex
+ * By default all fields are exported
+ */
+$fields_to_export = array('author',
+			  'address',
+			  'annote',
+			  'author',
+			  'booktitle',
+			  'chapter',
+			  'crossref',
+			  'edition',
+			  'editor',
+			  'howpublished',
+			  'institution',
+			  'journal',
+			  'key',
+			  'month',
+			  'note',
+			  'number',
+			  'organization',
+			  'pages',
+			  'publisher',
+			  'school',
+			  'series',
+			  'title',
+			  'type',
+			  'volume',
+			  'year');</pre>
+        <p>When exporting the basket to bibtex, you can select which <acronym>BibTeX</acronym> fields are exported. Add/remove the name of fields that you want/don't want to be exported by default.</p>
+    </div>
+</div>
+
+<div class="topic" id="help_nb_display">
+    <h3>Select the number of references to display in a page</h3>
+    <div class="topic_content">
+    <p>You can choose the number of references that are displayed in a BibORB page:</p>
+    <pre>
+/**
+ * Max number of references by page.
+ */
+define("MAX_REFERENCES_BY_PAGE",10);</pre>
+    </div>
+</div>
+
+<div class="topic" id="help_gen_bibtex">
+    <h3>Keep an up-to-date BibTeX copy of the database</h3>
+    <div class="topic_content">
+    <p>References are stored in an XML format. BibTeX exporting is possible through the BibORB interface. You may also need to generate an up-to-date BibTeX file you will share over the network. If you activate the <code class='variable'>GEN_BIBTEX</code> option, a BibTeX file in the <code class="file">bibs</code> directory is keep up-to-date each time a modification is done.</p>
+    <pre>
+/**
+ * Keep an up-to-date BibTeX file.
+ * If true, each time a bibliography is modified, a BibTeX file is updated
+ * in its 'bibs' directory.
+ */
+define("GEN_BIBTEX",TRUE);</pre>
+    </div>
+</div>
+
+<div class="topic" id="shelf_mode">
+    <h3>Shelf mode</h3>
+    <div class="topic_content">
+    <p>The 'Shelf mode' allows to save two additional information: the read status (read, not read, to read) of a reference and its ownership (own, not own, to buy, borrowed). If you want this information to be displayed in BibORB (reference display) activate it. If not activated, these information can only be modified while creating or editing a reference.</p>
+    <pre>
+/**
+ *  Activate the shelf mode.
+ *  Additional action will be available to set the ownership of a reference
+ *  and its reading status(read, read next, not read)
+ * value: TRUE/FALSE
+ */
+define("SHELF_MODE",TRUE);</pre>
+    </div>
+</div>
+
+<div class="topic" id="help_permissions">
+    <h3>Tune BibORB files permissions</h3>
+    <div class="topic_content">
+    <pre>
+/**
+ * umask - Set the mask to use when creating files.
+ *
+ */
+define("UMASK",0111);
+
+/**
+ * dmask - Set the mask to use when creating directories.
+ */
+define("DMASK",0000);
+
+/**
+ *  List of file types that can be uploaded
+ */
+$valid_upload_extensions = array('ps','pdf','gz','bz2','zip');
+</pre>
+<p>See <code>umask</code> help.</p>
+<p>Add extension to <code class='variable'>$valid_upload_extensions</code> to allow new type of files to be uploaded.</p>
+    </div>
+</div>
+
+
+</div>
+</div>
+</div>
+</body>
+</html>

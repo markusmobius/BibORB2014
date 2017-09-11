@@ -1,0 +1,28 @@
+<p>
+Questo menu d&agrave; accesso alle funzionalit&agrave; del carrello. Puoi selezionare alcuni elementi ed eseguire azioni su di essi:
+</p>
+
+<table class="help">
+	<tbody>
+		<tr class='colored'>
+			<th>Mostra tutti</th>
+			<td>Mostra tutti gli elementi registrati nel carrello.</td>
+		</tr>
+		<tr>
+			<th>Modifica del gruppo</th>
+			<td>Classifica elementi in gruppi.</td>
+		</tr>
+		<tr class='colored'>
+			<th>Esporta in BibTeX</th>
+			<td>Esporta la selezione in BibTeX.</td>
+		</tr>
+		<tr>
+			<th>Esporta in HTML</th>
+			<td>Esporta la selezione in HTML.</td>
+		</tr>
+        <tr class='colored'>
+			<th>Resetta carrello</th>
+			<td>Cancella il carrello.</td>
+		</tr>
+	</tbody>
+</table>

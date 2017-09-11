@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!--
+ * This file is part of BibORB
+ * 
+ * Copyright (C) 2003-2005  Guillaume Gardey
+ * 
+ * BibORB is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU General Public License
+ * as published by the Free Software Foundation; either version 2
+ * of the License, or (at your option) any later version.
+ * 
+ * BibORB is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ * 
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+ * 
+-->
+<!--
+ * File: model.xml
+ * Author: Guillaume Gardey (ggardey@club-internet.fr)
+ * Licence: GPL
+ *
+ * Description:
+ *
+ *    Definition of fields present in BibTeX entries
+ *
+-->
+<entrylist>
+  <entry type="article">
+    <required>
+      <id/><author/><title/><journal/><year/>
+    </required>
+    <optional>
+      <volume/><number/><pages/><month/><note/>
+    </optional>
+    <additional>
+      <own/><read/><groups/><abstract/><keywords/>
+      <url/><ad_url/><urlzip/><ad_urlzip/><pdf/><ad_pdf/>
+      <website/><link/><longnotes/>
+    </additional>
+  </entry>
+  
+  <entry type="book">
+    <required>
+      <id/>
+      <exalternative>
+	<author/><editor/>
+      </exalternative>
+      <title/><publisher/><year/>
+    </required>
+    <optional>
+      <exalternative>
+        <volume/><number/>
+      </exalternative>
+      <series/><address/><edition/><month/><note/>
+    </optional>
+    <additional>
+      <own/><read/><groups/><abstract/><keywords/>
+      <url/><ad_url/><urlzip/><ad_urlzip/><pdf/><ad_pdf/>
+      <website/><link/><longnotes/>
+    </additional>
+  </entry>
+  
+  <entry type="booklet">
+    <required>
+        <id/><title/>
+    </required>
+    <optional>
+      <author/><howpublished/><address/><month/><year/><note/>
+    </optional>
+    <additional>
+      <own/><read/><groups/><abstract/><keywords/>
+      <url/><ad_url/><urlzip/><ad_urlzip/><pdf/><ad_pdf/>
+      <website/><link/><longnotes/>
+    </additional>
+  </entry>
+
+  <entry type="inbook">
+    <required>
+      <id/>
+      <exalternative>
+        <author/><editor/>
+      </exalternative>
+      <title/><chapter/><pages/><publisher/><year/>
+    </required>
+    <optional>
+      <alternative>
+        <volume/><number/>
+      </alternative>
+      <series/><type/><address/><edition/><month/><note/>
+    </optional>
+    <additional>
+      <own/><read/><groups/><abstract/><keywords/>
+      <url/><ad_url/><urlzip/><ad_urlzip/><pdf/><ad_pdf/>
+      <website/><link/><longnotes/>
+    </additional>
+  </entry>
+
+  <entry type="incollection">
+    <required>
+      <id/><author/><title/><booktitle/><publisher/><year/>
+    </required>
+    <optional>
+      <editor/>
+      <exalternative>
+        <volume/><number/>
+      </exalternative>
+      <series/><type/><chapter/><pages/><address/><edition/><month/><note/>
+    </optional>
+    <additional>
+      <own/><read/><groups/><abstract/><keywords/>
+      <url/><ad_url/><urlzip/><ad_urlzip/><pdf/><ad_pdf/>
+      <website/><link/><longnotes/>
+    </additional>
+  </entry>
+
+  <entry type="inproceedings">
+    <required>
+      <id/><author/><title/><booktitle/><year/>
+    </required>
+    <optional>
+      <editor/>
+      <exalternative>
+        <volume/><number/>
+      </exalternative>
+      <series/><pages/><address/><month/><organization/><publisher/><note/>
+    </optional>
+    <additional>
+      <own/><read/><groups/><abstract/><keywords/>
+      <url/><ad_url/><urlzip/><ad_urlzip/><pdf/><ad_pdf/>
+      <website/><link/><longnotes/>
+    </additional>
+  </entry>
+
+  <entry type="conference">
+    <required>
+      <id/><author/><title/><booktitle/><year/>
+    </required>
+    <optional>
+      <editor/>
+      <exalternative>
+        <volume/><number/>
+      </exalternative>
+      <series/><pages/><address/><month/><organization/><publisher/><note/>
+    </optional>
+    <additional>
+      <own/><read/><groups/><abstract/><keywords/>
+      <url/><ad_url/><urlzip/><ad_urlzip/><pdf/><ad_pdf/>
+      <website/><link/><longnotes/>
+    </additional>  
+  </entry>
+
+  <entry type="manual">
+    <required>
+      <id/><title/>
+    </required>
+    <optional>
+      <author/><organization/><address/><edition/><month/><year/><note/>
+    </optional>
+    <additional>
+      <own/><read/><groups/><abstract/><keywords/>
+      <url/><ad_url/><urlzip/><ad_urlzip/><pdf/><ad_pdf/>
+      <website/><link/><longnotes/>
+    </additional> 
+  </entry>
+
+  <entry type="mastersthesis">
+    <required>
+      <id/><author/><title/><school/><year/>
+    </required>
+    <optional>
+      <type/><address/><month/><note/>
+    </optional>
+    <additional>
+      <own/><read/><groups/><abstract/><keywords/>
+      <url/><ad_url/><urlzip/><ad_urlzip/><pdf/><ad_pdf/>
+      <website/><link/><longnotes/>
+    </additional> 
+  </entry>
+
+  <entry type="phdthesis">
+    <required>
+      <id/><author/><title/><school/><year/>
+    </required>
+    <optional>
+      <type/><address/><month/><note/>
+    </optional>
+    <additional>
+      <own/><read/><groups/><abstract/><keywords/>
+      <url/><ad_url/><urlzip/><ad_urlzip/><pdf/><ad_pdf/>
+      <website/><link/><longnotes/>
+    </additional> 
+  </entry>
+
+  <entry type="misc">
+    <required>
+      <id/>
+    </required>
+    <optional>
+      <author/><title/><howpublished/><month/><year/><note/>
+    </optional>
+    <additional>
+      <own/><read/><groups/><abstract/><keywords/>
+      <url/><ad_url/><urlzip/><ad_urlzip/><pdf/><ad_pdf/>
+      <website/><link/><longnotes/>
+    </additional> 
+  </entry>
+
+  <entry type="proceedings">
+    <required>
+      <id/><title/><year/>
+    </required>
+    <optional>
+      <editor/>
+      <alternative>
+        <volume/><number/>
+      </alternative>
+      <series/><address/><month/><organization/><publisher/><note/>
+    </optional>
+    <additional>
+      <own/><read/><groups/><abstract/><keywords/>
+      <url/><ad_url/><urlzip/><ad_urlzip/><pdf/><ad_pdf/>
+      <website/><link/><longnotes/>
+    </additional> 
+  </entry>
+
+  <entry type="techreport">
+    <required>
+      <id/><author/><title/><institution/><year/>
+    </required>
+    <optional>
+      <type/><number/><address/><month/><note/>
+    </optional>
+    <additional>
+      <own/><read/><groups/><abstract/><keywords/>
+      <url/><ad_url/><urlzip/><ad_urlzip/><pdf/><ad_pdf/>
+      <website/><link/><longnotes/>
+    </additional> 
+  </entry>
+
+  <entry type="unpublished">
+    <required>
+      <id/><author/><title/><note/>
+    </required>
+    <optional>
+      <month/><year/>
+    </optional>
+    <additional>
+      <own/><read/><groups/><abstract/><keywords/>
+      <url/><ad_url/><urlzip/><ad_urlzip/><pdf/><ad_pdf/>
+      <website/><link/><longnotes/>
+    </additional> 
+  </entry>
+  
+</entrylist>

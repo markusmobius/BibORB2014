@@ -1,0 +1,85 @@
+<p>
+Dieses Menü erlaubt den Zugriff auf die Bibliographien-Einträge.
+</p>
+
+<table class='help'>
+  <tbody>
+    <tr class='colored'>
+      <th>All</th>
+      <td>Zeige alle Einträge in der gegenwärtigen Bibliographien an.</td>
+    </tr>
+    <tr>
+       <th>Gruppen</th>
+       <td>Zeige Einträge nach Gruppen an.</td>
+    </tr>
+    <tr class='colored'>
+      <th>Einfache Suche</th>
+      <td>Durchsuche die Bibliographie nach Einträgen.</td>
+    </tr>
+    <tr>
+      <th>Fortgeschrittene Suche</th>
+      <td> Durchsuche die Bibliographie nach Einträgen. And/Or Verbinder erlauben die Durchsuchung nach mehr als nur einem Feld.</td>
+    </tr>
+  </tbody>
+</table>
+<p>
+Editiere die <code>config.php</code> Datei um die Standardsuche zu verändern (ID, Jahr, Titel).
+</p>
+
+<p>
+Verschieden Möglichkeiten stehen für jeden Eintrag zur Verfügung:
+</p>
+
+<table class='help'>
+  <tbody>
+    <tr class='colored'>
+       <th class='img'><img src="data/images/stock_book-16.png" alt="ps"/></th>
+       <td>Downloade eine postscript-Version von der Veröffentlichungen.</td>
+   </tr>
+   <tr>
+       <th  class='img'><img src="data/images/tar.png" alt="ps.gz"/></th>
+       <td> Downloade eine komprimierte postscript-Version von der Veröffentlichungen.</td>
+    </tr>
+    <tr class='colored'>
+        <th class='img'><img src="data/images/pdf-document.png" alt="pdf"/></th>
+        <td> Downloade eine PDF-Version von der Veröffentlichungen.</td>
+    </tr>
+    <tr>
+        <th class='img'><img src="data/images/stock_about-16.png" alt="abstract"/></th>
+        <td>Zeige den Abstrakt an.</td>
+    </tr>
+    <tr class='colored'>
+        <th class='img'><img src="data/images/stock_convert-16.png" alt="BibTeX"/></th>
+        <td>Erzeuge den BibTeX source code.</td>
+    </tr>
+    <tr>
+        <th class='img'><img src="data/images/link-url-16.png" alt="webpage"/></th>
+        <td>Gehe zur verwandten Webseite (zum Beispiel die Homepage).</td>
+    </tr>
+    <tr class='colored'>
+        <th class='img'><img src="data/images/stock_jump-to-16.png" alt="Local link"/></th>
+        <td>Gehe zur lokalen Webseite auf dem Webserver.</td>
+    </tr>
+    <tr>
+        <th class='img'><img src="data/images/stock_edit-16.png" alt="edit"/></th>
+        <td>Editiere den Eintrag um Veränderungen vorzunehmen.</td>
+    </tr>
+    <tr class='colored'>
+        <th class='img'><img src="data/images/stock_delete-16.png" alt="delete"/></th>
+        <td>Entferne den Eintrag.</td>
+    </tr>
+    <tr>
+        <th class='img'><img src="data/images/cvs-add-16.png" alt="add"/></th>
+        <td>Hinzufügen des Eintrages zum Warenkorb.</td>
+    </tr>
+    <tr class='colored'>
+        <th class='img'><img src="data/images/cvs-remove-16.png" alt="add"/></th>
+        <td>Entfernen des Eintrages vom Warenkorb.</td>
+    </tr>
+    <tr>
+        <th class='img'><img src="data/images/add.png" alt="add"/></th>
+        <td>Hinzufügen aller Einträge zum Warenkorb.</td>
+    </tr>
+    </tbody>
+</table>
+    

@@ -1,0 +1,24 @@
+BibORB: A web tool to manage and share BibTeX bibliographies.
+
+CREDITS
+-------
+
+Author:
+
+        Guillaume Gardey    <ggardey@club-internet.fr>
+
+
+Contributors:
+
+        Arild Bergh
+                Initial "Shelf Mode" extension (read status of references and
+            ownership).
+    
+        Oliver Otto
+                German translation.
+    
+        Massimo Redaelli
+                Italian translation.
+    
+
+And many thanks to all biborb users and testers!

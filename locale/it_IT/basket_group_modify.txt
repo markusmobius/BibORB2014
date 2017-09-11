@@ -1,0 +1,14 @@
+
+<form style='display:inline;' action='bibindex.php' method='get'>
+<fieldset style='border:none;'>
+<input type='submit' name='action' value='Reset'/> Resetta il campo 'gruppi' di ogni elemento nel carrello. 
+</fieldset>
+</form>
+<br/>
+<form style='display:inline;' action='bibindex.php' method='get'>
+<fieldset style='border:none;'>
+Aggiungi tutti gli elementi del carrello ad un gruppo:
+<input name='groupvalue' size='20'/>
+<input type='submit' name='action' value='addgroup'/>
+</fieldset>
+</form>

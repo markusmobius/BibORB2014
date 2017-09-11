@@ -1,0 +1,37 @@
+<p>
+    Questo menu d&agrave; accesso alle funzioni di gestione. In dipendenza dalla configurazione di <acronym class='biborb'>BibORB</acronym> puoi aggiungere, modificare o cancellare elementi.
+</p>
+
+<p>
+Azioni disponibili (in dipendenza dalla configurazione):
+</p>
+
+<table class='help'>
+       <tbody>
+		<tr class='colored'>
+			<th>Login</th>
+			<td>Autenticazione per aggiungere/modificare/rimuovere elementi.</td>
+		</tr>
+		<tr>
+			<th>Logout</th>
+			<td>Logout</td>
+		</tr>
+		<tr class='colored'>
+			<th>Aggiungi un elemento</th>
+			<td/>
+		</tr>
+		<tr>
+			<th>Aggiorna da BibTeX</th>
+			<td>Aggiorna la bibliografia a partire dal file BibTeX nella directory bibs. Usalo quando modifichi la bibliografia con un editor esterno.</td>
+		</tr>
+		<tr class='colored'>
+			<th>Importa BibTeX</th>
+			<td>Gli elementi BibTeX possono essere aggiunti copiando e incollando o scegliendo un file BibTex da caricare. Le macro <code>@string</code> di <acronym>BibTeX</acronym> verranno riconosciute ed espanse.</td>
+		</tr>
+	</tbody>
+</table>
+
+<span style="color:red"><strong>Attenzione!</strong></span>
+<ul>
+    <li>BibORB non rileva errori n&eacute; chiavi BibTeX duplicate.</li>
+</ul>

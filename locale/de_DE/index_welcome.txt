@@ -1,0 +1,38 @@
+<acronym class='biborb'>BibORB 2014</acronym> ist ein Tool das
+den Zugriff und die Bearbeitung von BibTeX Bibliographien
+erlaubt und dies Mithilfe eines Webbrowser.
+
+<p> Die Hauptziele des Designs liegen in der gemeinsamen Benutzung von Bibliographien über das lokale Netzwerk und dem einfachen elektronischem Zugriff
+auf elektronische Veröffentlichungen. Es startete mit damit Bibliographien anzulegen und zulöschen. Dann wurden Möglichkeiten hinzugefügt um BibTeX Einträge zu bearbeiten, durch die Mithilfe eines einfachen Webinterfaces. </p>
+
+<span class='biborb'>BibORB</span> unterstützt derzeit:
+<ul>
+    <li> Die umfangreichen Funktionen des webbasierten Interface beinhalten:
+   	<ul>
+		<li> Importiere deine existierenden .bib Dateien </li>
+		<li> Erzeuge neue Bibliographien </li>
+		<li> Lösche Bibliographien </li>
+		<li> Exportiere Bibliographien als einfache .bib Textdateien </li>
+		<li> Betrachte unterschiedliche Bibliographien </li>
+		<li> Durchstöbern von Bibliographien-Einträgen </li>
+		<li> Erzeuge neue Bibliographien-Einträge </li>
+		<li> Lösche Bibliographien-Einträge </li>
+		<li> Upload weitere Informationen zu den Bibliographien-Einträge
+		     zum Server (einschließlich elektronische Versionen der Veröffentlichungen  in .ps, .ps.gz or .pdf Format) </li>
+		<li> Erzeuge Links zu anderen Webseiten mit weiteren Informationen über den Bibliographien-Eintrag </li>
+		<li> Erzeuge Links zum Server mit weiteren Informationen über den Bibliographien-Eintrag </li>
+		<li> Durchsuchen der Bibliographie (nach Autor, Schlüsselwörtern oder Titeln)</li>
+		<li> Selektieren von Teilen der Bibliographie nach Gruppen </li>
+    <li> Selektieren von Teilen der Bibliographie durch eine Suchanfrage</li>
+		<li> Selektieren von Teilen der Bibliographie durch die Warenkorbfunktion</li>
+    <li> Exportieren des Warenkorbs als einfache .bib Textdatei </li>
+    <li> Exportieren des Warenkorbs als einfache HTML-Seite</li>
+	</ul>
+    </li>
+    <li> Zusätzlich kann ein bevorzugter Texteditor genutzt werden um die .bib Einträge zu bearbeiten und sie anschließend über die Updatefunktion von <acronym class='biborb'>BibORB</acronym> wieder einzufügen. Diese Bibliographie kann dann genauso benutzt werden wie weiter oben beschrieben wurde.
+    </li>
+</ul>
+
+<p><acronym class='biborb'>BibORB 2014</acronym> unterstützt
+auch eine einfache Datenbank-Authentifizierung um den Zugriff
+auf die Bibliographien einzuschränken.</p>

@@ -1,0 +1,33 @@
+<p>
+    This menu gives access to management functions. According to the <acronym class='biborb'>BibORB</acronym> configuration you may add, edit or delete entries.
+</p>
+
+<p>
+Available actions (depending on the configuration):
+</p>
+
+<table class='help'>
+       <tbody>
+		<tr class='colored'>
+			<th>Login</th>
+			<td>Login to add/edit/delete entries.</td>
+		</tr>
+		<tr>
+			<th>Logout</th>
+			<td>Logout</td>
+		</tr>
+		<tr class='colored'>
+			<th>Add an entry</th>
+			<td/>
+		</tr>
+		<tr>
+			<th>Update from BibTeX</th>
+			<td>Updates the bibliography according to the BibTeX file in the bibs directory. Use it when editing your bibliography in an alternative editor.</td>
+		</tr>
+		<tr class='colored'>
+			<th>Import BibTeX</th>
+			<td>The BibTeX entries may be added by copy/paste in a text field or by choosing a BibTeX source file. <code>@string</code> <acronym>BibTeX</acronym> macros will be resolved and expanded.</td>
+		</tr>
+	</tbody>
+</table>
+

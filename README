@@ -1,0 +1,82 @@
+Author: Guillaume Gardey (ggardey@club-internet.fr)
+Licence: GPL
+
+See doc/index.html for a more details documentation of BibORB (installation, configuration, ...)
+
+DESCRIPTION
+-----------
+
+	BibORB provides a web-based frontend to BibTeX. It was first designed to 
+provide a web-interface to browse and share bibliographies using the BibTeX 
+format and easily archive electronic releases of articles (upload copies of 
+papers into BibORB so that they are available for anyone consulting the 
+database). Now, it also includes a basic web-based BibTeX editor, search 
+functions and a basic user management system to set permissions (add / modify /
+delete) to recorded bibliographies.
+
+	BibORB can be installed:
+        - for a personal use (on a local machine running a webserver): edit your
+bibliography (using BibORB or your favorite text editor) and easily browe it by
+using your web browser.
+
+        - on a network to share bibliographic references. You will have then the
+choice to allow other people to add, delete or update the references or only 
+install BibORB to allow references viewing and searching.
+
+REQUIREMENTS
+------------
+	BibORB is based on PHP, XML, XSL and use web pages formated using XHTML/CSS
+standards. Consequently, you should ensure that:
+
+	* PHP (>=4.0.3) is installed on your webserver.
+	* PHP XSLT functions are available.
+    * PHP Pear functions are available.
+	* MySQL or any other database if you wish to use authentication.
+
+
+BIBLIOGRAPHIES
+--------------
+
+    The "bibs" directory contains all bibliographies created by BibORB as well
+as the electronic releases of papers that would have been uploaded.
+
+    Under the hypothesis that the bibliography named "test" exists, "bibs" is
+structured as follows:
+
+    bibs/
+     |->test/
+         |->test.bib
+         |->test.xml
+         |->description.txt
+         |->papers/
+             |->...lots of pdf, ps, ps.gz :) ...
+     |->otherdatabases.....
+
+    References are stored in the test.xml but a BibTeX copy is maintained 
+up-to-date for convenience. It is also possible to modify directly the test.bib
+file to modify your bibliography and then use "Update from BibTeX" in the Admin
+BibORB menu to update the BibORB bibliography. (it may be usefull for users that
+edit their BibTeX file with other tools).
+
+BIBTEX - XML
+------------
+
+Some bibtex fields were added :
+    * ABSTRACT: 	abstract of the paper
+	* GROUPS:       for classification purpose, separate each group by comma
+    * KEYWORDS: 	paper's keywords
+	* URL:          link to the ps version of the paper for instance
+	* URLZIP:       link to the ps.gz version of the paper
+	* PDF:          link to the pdf version of the paper
+	* WEBSITE:      url of author website, or tool or....
+    * LINK:         url of a local page
+    * LONGNOTES:    misc information, remarks...
+
+If you edit your BibTeX independently of the tool, only the filename
+is needed in url, urlzip and pdf. You will have to put manually the
+e-papers into the appropriate papers directory.
+
+Warning!! the script used to load BibTeX data into BibORB does not transform 
+LaTeX code. If @string macros are present in bibtex data, they are expanded 
+before adding the data to BibORB. It also does not transform authors name
+and lastname.
