@@ -36,10 +36,10 @@ REQUIREMENTS
 	BibORB is based on PHP, XML, XSL and use web pages formated using XHTML/CSS
 standards. Consequently, you should ensure that:
 
-	* PHP (>=4.0.3) is installed on your webserver.
+	* PHP (>=5.3) is installed on your webserver.
 	* PHP XSLT functions are available.
     * PHP Pear functions are available.
-	* MySQL or any other database if you wish to use authentication.
+	* You need to create Google OAuth 2.0 credentials for authentication.
 
 
 BIBLIOGRAPHIES
